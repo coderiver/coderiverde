@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="455px" height="216px" viewBox="0 0 455 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>triangles</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="triangles" sketch:type="MSLayerGroup" fill="#FFF000">
+            <polygon id="triangle-18" sketch:type="MSShapeGroup" points="255.91511 0.179551125 277.777397 131.353256 154.121244 86.9998865 "></polygon>
+            <polygon id="triangle-17" sketch:type="MSShapeGroup" points="162.225052 42.8500986 157.594304 69.7663164 135.598255 49.5067978 "></polygon>
+            <polygon id="triangle-16" sketch:type="MSShapeGroup" points="113.312784 44.165472 124.889652 84.9739304 86.6859877 74.2653294 "></polygon>
+            <polygon id="triangle-15" sketch:type="MSShapeGroup" points="66.3345757 24.9038048 59 90.1823807 0.269509554 47.7119827 "></polygon>
+            <polygon id="triangle-14" sketch:type="MSShapeGroup" points="292.843376 42.2065601 292.843376 87.0364265 260.407137 68.9171219 "></polygon>
+            <polygon id="triangle-13" sketch:type="MSShapeGroup" points="325.37998 9.70926666 420.116547 55.11555 328.743409 112.854404 "></polygon>
+            <path d="M62.446,147.3945 L53.687,108.3535 L91.908,120.7565 L62.446,147.3945 L62.446,147.3945 Z" id="triangle-12" sketch:type="MSShapeGroup"></path>
+            <path d="M126.999,116.4275 L121.999,106.4255 L132,106.4255 L126.999,116.4275 L126.999,116.4275 Z" id="triangle-11" sketch:type="MSShapeGroup"></path>
+            <path d="M140.998,130.4215 L140.998,112.1205 L157.106,121.2715 L140.998,130.4215 L140.998,130.4215 Z" id="triangle-10" sketch:type="MSShapeGroup"></path>
+            <path d="M175.634,175.3175 L171.845,167.3135 L180.628,167.7615 L175.634,175.3175 L175.634,175.3175 Z" id="triangle-9" sketch:type="MSShapeGroup"></path>
+            <path d="M201.672,141.9155 L201.672,108.5195 L230.594,125.2175 L201.672,141.9155 L201.672,141.9155 Z" id="triangle-8" sketch:type="MSShapeGroup"></path>
+            <path d="M237.744,185.6745 L221.652,173.8345 L239.952,165.8185 L237.744,185.6745 L237.744,185.6745 Z" id="triangle-7" sketch:type="MSShapeGroup"></path>
+            <path d="M258.633,215.5755 L250.3,212.5775 L256.84,206.6965 L258.633,215.5755 L258.633,215.5755 Z" id="triangle-6" sketch:type="MSShapeGroup"></path>
+            <path d="M332.178,142.1415 L282.981,155.0605 L296.39,105.9955 L332.178,142.1415 L332.178,142.1415 Z" id="triangle-5" sketch:type="MSShapeGroup"></path>
+            <path d="M319.634,185.5755 L311.3,182.5775 L317.84,176.6975 L319.634,185.5755 L319.634,185.5755 Z" id="triangle-4" sketch:type="MSShapeGroup"></path>
+            <path d="M354.268,154.2045 L354.268,114.3875 L388.75,134.2955 L354.268,154.2045 L354.268,154.2045 Z" id="triangle-3" sketch:type="MSShapeGroup"></path>
+            <path d="M428.203,76.5735 L454.34,102.7095 L418.637,112.2765 L428.203,76.5735 L428.203,76.5735 Z" id="triangle-2" sketch:type="MSShapeGroup"></path>
+            <path d="M413.62,177.6525 L427.747,163.5255 L432.918,182.8225 L413.62,177.6525 Z" id="triangle-1" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

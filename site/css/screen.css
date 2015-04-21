@@ -20,15 +20,120 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-@font-face { font-family: "Politica"; src: url("fonts/politica-webfont.eot"); src: url("fonts/politica-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/politica-webfont.woff2") format("woff2"), url("fonts/politica-webfont.woff") format("woff"), url("fonts/politica-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "Politica-Bold"; src: url("fonts/politica_bold-webfont.eot"); src: url("fonts/politica_bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/politica_bold-webfont.woff2") format("woff2"), url("fonts/politica_bold-webfont.woff") format("woff"), url("fonts/politica_bold-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "Roboto-Regular"; src: url("fonts/roboto_regular.eot"); src: url("fonts/roboto_regular.eot?#iefix") format("embedded-opentype"), url("fonts/roboto_regular.woff2") format("woff2"), url("fonts/roboto_regular.woff") format("woff"), url("fonts/roboto_regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "Roboto-Light"; src: url("fonts/roboto_light.eot"); src: url("fonts/roboto_light.eot?#iefix") format("embedded-opentype"), url("fonts/roboto_light.woff2") format("woff2"), url("fonts/roboto_light.woff") format("woff"), url("fonts/roboto_light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-.intro { background: #fff000; color: #000; }
+@font-face { font-family: "Politica"; src: url("../fonts/politica.eot"); src: url("../fonts/politica.eot?#iefix") format("embedded-opentype"), url("../fonts/politica.woff2") format("woff2"), url("../fonts/politica.woff") format("woff"), url("../fonts/politica.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Politica-Bold"; src: url("../fonts/politica_bold.eot"); src: url("../fonts/politica_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/politica_bold.woff2") format("woff2"), url("../fonts/politica_bold.woff") format("woff"), url("../fonts/politica_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Roboto-Regular"; src: url("../fonts/roboto_regular.eot"); src: url("../fonts/roboto_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_regular.woff2") format("woff2"), url("../fonts/roboto_regular.woff") format("woff"), url("../fonts/roboto_regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Roboto-Light"; src: url("../fonts/roboto_light.eot"); src: url("../fonts/roboto_light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_light.woff2") format("woff2"), url("../fonts/roboto_light.woff") format("woff"), url("../fonts/roboto_light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Roboto-Bold"; src: url("../fonts/roboto_bold.eot"); src: url("../fonts/roboto_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_bold.woff2") format("woff2"), url("../fonts/roboto_bold.woff") format("woff"), url("../fonts/roboto_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.l { max-width: 960px; padding: 0 10px; margin: auto; }
 
-.header__logo { display: block; color: #000; font-size: 40px; text-transform: uppercase; text-decoration: none; letter-spacing: -0.01em; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; }
+body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Light", Helvetica, Arial, sans-serif; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.promo { max-width: 650px; margin: auto; font-size: 32px; letter-spacing: -0.01e; color: inherit; text-align: center; font-family: "Politica-Bold", Helvetica, Arial, sans-serif; font-weight: normal; }
+.icon { display: inline-block; height: 1em; width: 1em; fill: inherit; stroke: inherit; }
+
+.icon-diamond { font-size: 55px; width: 1.23636em; }
+
+.icon-eye { font-size: 59px; width: 1.13559em; }
+
+.icon-arrow { font-size: 36px; width: 0.77778em; }
+
+.icon-clock { font-size: 41px; width: 0.7561em; }
+
+.icon-dollar { font-size: 57px; width: 1em; }
+
+.icon-fish { font-size: 21px; width: 2.38095em; }
+
+.icon-letter { font-size: 47px; width: 1.17021em; }
+
+.icon-steering { font-size: 80px; width: 0.9875em; }
+
+.icon-octa { font-size: 125px; fill: none; }
+
+.header { position: relative; z-index: 0; padding: 3.96825% 0 70px; background: #fff000; color: #000; }
+.header:before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #fff000; z-index: -1; }
+
+.header__row { position: relative; max-width: 1260px; padding: 0 10px; margin: auto; text-align: right; }
+
+.header__triangles { position: absolute; z-index: -2; top: 100%; left: 50%; margin: -65px 0 0 -227px; }
+
+.logo { position: absolute; top: 50%; left: 10px; margin-top: -0.5em; color: #000; font-size: 40px; line-height: 1; text-transform: uppercase; text-decoration: none; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; }
+.logo:before { content: ""; position: absolute; top: 100%; left: 2px; right: 0; height: 5px; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%20%20%20%3Ctitle%3E%20%20%20%20%20%20%20%20wave%20%20%20%20%3C%2Ftitle%3E%20%20%20%20%3Cpath%20d%3D%22M10%201.155l-5%203.84-5-3.84V0l5%203.84L10%200v1.155z%22%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat-x; }
+
+.say-hello { position: relative; display: inline-block; vertical-align: middle; padding: 3px 6px 2px; border: 2px solid #000; color: inherit; background: #fff000; font-size: 21px; line-height: 1; font-family: "Politica-Bold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; text-transform: uppercase; text-decoration: none; }
+.say-hello:before { content: ""; position: absolute; top: 100%; left: 8px; width: 0px; height: 0px; border-style: solid; border-width: 0 10px 10px 0; border-color: transparent #000 transparent transparent; }
+.say-hello:after { content: ""; position: absolute; top: 100%; left: 12px; width: 0px; height: 0px; border-style: solid; border-width: 0 4px 5px 0; border-color: transparent #fff000 transparent transparent; }
+
+.menu-btn { position: relative; display: inline-block; vertical-align: middle; width: 30px; height: 30px; margin-left: 48px; background: none; text-decoration: none; color: inherit; }
+.menu-btn:hover { color: red; }
+.menu-btn:hover .menu-btn__inner { -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); background: red; }
+.menu-btn:hover .menu-btn__inner:before { -webkit-transform: rotate(35deg); -ms-transform: rotate(35deg); transform: rotate(35deg); width: 50%; margin-bottom: 2px; background: red; }
+.menu-btn:hover .menu-btn__inner:after { -webkit-transform: rotate(-35deg); -ms-transform: rotate(-35deg); transform: rotate(-35deg); width: 50%; margin-top: 2px; background: red; }
+
+.menu-btn__inner { position: absolute; top: 50%; left: 50%; margin: -1px 0 0 -13px; box-sizing: border-box; width: 26px; height: 2px; background: #000; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
+.menu-btn__inner:before, .menu-btn__inner:after { content: ""; position: absolute; right: 0; width: 100%; height: 100%; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; background: inherit; }
+.menu-btn__inner:before { bottom: 100%; margin-bottom: 4px; }
+.menu-btn__inner:after { top: 100%; margin-top: 4px; }
+
+.promo-text { position: relative; max-width: 660px; box-sizing: border-box; margin: auto; font-size: 32px; line-height: 1.15; color: inherit; text-align: center; text-transform: uppercase; font-family: "Politica-Bold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; }
+.promo-text:before { content: ""; position: absolute; top: 100%; left: 9.09091%; width: 10px; height: 10px; margin-top: 12px; border-radius: 50%; background: #000; }
+
+.promo-text__row { display: inline-block; border: 2px solid; border-width: 2px 0; }
+.promo-text__row + .promo-text__row { margin-top: -2px; }
+
+.anim-text-box { margin: 100px 0; font-size: 238px; font-family: "Politica-Bold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; line-height: 1; text-align: center; }
+
+.heading { margin: 40px 0; font-size: 40px; text-transform: uppercase; text-align: center; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; }
+.heading:first-child { margin-top: 0; }
+
+.heading__inner { display: inline-block; font-weight: normal; position: relative; font-weight: normal; font-size: inherit; }
+
+.heading_wave .heading__inner:before, .heading_wave .heading__inner:after { content: ""; position: absolute; top: 50%; width: 116px; height: 9px; margin-top: -5px; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2221%22%20height%3D%229%22%20viewBox%3D%220%200%2021%209%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%20%20%20%3Ctitle%3E%20%20%20%20%20%20%20%20wave-large%20%20%20%20%3C%2Ftitle%3E%20%20%20%20%3Cpath%20d%3D%22M21%202.082l-10.5%206.92L0%202.082V.002l10.5%206.92L21%20.002v2.08z%22%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat-x; }
+.heading_wave .heading__inner:before { right: 100%; margin-right: 35px; }
+.heading_wave .heading__inner:after { left: 100%; margin-left: 35px; }
+
+.section { padding: 35px 0; position: relative; box-sizing: border-box; min-height: 400px; z-index: 0; }
+
+.section_bg { background: #EDF0F7; }
+
+.figure-group { font-size: 0; margin: 0 -15px; }
+
+.figure { display: inline-block; vertical-align: top; padding: 0 10px; width: 25%; box-sizing: border-box; text-align: center; font-size: 16px; cursor: default; }
+.figure:hover .figure__icon .icon-octa { fill: #fff000; stroke: #fff000; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
+.figure:hover .figure__strong { box-shadow: 0 4px 0 -2px #fff000; }
+
+.figure__icon { position: relative; height: 125px; line-height: 125px; margin-bottom: 40px; }
+.figure__icon .icon { vertical-align: middle; position: relative; }
+.figure__icon .icon-octa { position: absolute; top: 0; left: 50%; margin-left: -0.5em; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; fill: transparent; }
+.figure__icon .icon-diamond { top: 4px; }
+.figure__icon .icon-eye { top: -5px; }
+.figure__icon .icon-letter { top: 2px; }
+
+.figure__strong { position: relative; display: inline-block; margin-bottom: 20px; font-size: 26px; line-height: 1.38; font-family: "Roboto-Regular", Helvetica, Arial, sans-serif; font-weight: normal; -webkit-transition: box-shadow 0.2s linear; transition: box-shadow 0.2s linear; }
+
+.figure__regular { font-family: "Roboto-Light", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: 0.01em; }
+
+.slider { margin: 40px 0; margin-left: 410px; position: relative; }
+
+.slider__nav { position: absolute; bottom: -5px; left: 25px; }
+
+.slider__prev, .slider__next { background: none; text-decoration: none; color: inherit; }
+.slider__prev .icon, .slider__next .icon { -webkit-transition: fill 0.2s linear; transition: fill 0.2s linear; }
+.slider__prev:hover .icon, .slider__next:hover .icon { fill: #fff000; }
+
+.slider__next { margin-left: 22px; }
+.slider__next .icon { -webkit-transform: scale(-1, -1); -ms-transform: scale(-1, -1); transform: scale(-1, -1); }
+
+.feedback { color: #333; *zoom: 1; }
+.feedback:after { content: " "; display: table; clear: both; }
+
+.feedback__ava { float: left; width: 128px; height: 128px; overflow: hidden; }
+.feedback__ava img { display: block; max-width: 100%; max-height: 100%; }
+
+.feedback__text { margin-left: 165px; }
+
+.feedback__person { display: block; margin-top: 40px; font-style: normal; font-weight: normal; font-size: 13px; }
+
+.feedback__name { display: block; font-family: "Roboto-Bold", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; }
 
 
 

@@ -3,19 +3,123 @@ extends _layout
 block title
   title Coderiver || Home page
 
+block svg-sprite
+  include ../../site/img/icons.svg
+
 block content
   
-  <!-- BEGIN intro -->
-  .intro
-    .header
-      a.header__logo(href="/") 
-        | Coderiver
+  //BEGIN header
+  header.header
+    .header__row
       .header__right
         button.say-hello(type="button")
           | Say hello
-        button.menu(type="button")
+        button.menu-btn(type="button")
+          i.menu-btn__inner
+      
+      a.logo(href="/")
+        | Coderiver
 
-    .promo.
-      We specialize in doing top notch HTML / CSS / Javscript
-      service for digital agenciesand development teams.
-  <!-- END intro -->
+    .l
+      .anim-text-box
+        | SERVICE
+      p.promo-text
+        span.promo-text__row
+          | We specialize in doing top notch HTML / CSS / Javscript
+        span.promo-text__row
+          | service for digital agencies and development teams.
+  
+    .header__triangles
+      include ../../site/img/svg/triangles.svg
+  //END header
+
+  //BEGIN why
+  section.section.why
+    .l
+      .heading.heading_wave
+        h2.heading__inner Why us
+
+      .figure-group
+        figure.figure
+          .figure__icon
+            +icon("octa")
+            +icon("diamond")
+          figcaption.figure__text
+            dl
+              dt.figure__strong
+                | Quality
+              dd.figure__regular.
+                We stick to design, pixel to pixel. Using all the latest 
+                tech to test it.
+
+        figure.figure
+          .figure__icon
+            +icon("octa")
+            +icon("eye")
+          figcaption.figure__text
+            dl
+              dt.figure__strong
+                | 10 years on market
+              dd.figure__regular.
+                We did more than 500 projects and have experience in 
+                everything concerning frontend
+
+        figure.figure
+          .figure__icon
+            +icon("octa")
+            +icon("letter")
+          figcaption.figure__text
+            dl
+              dt.figure__strong
+                | Support
+              dd.figure__regular.
+                We support our projects forever. 
+                And even if you decide to support them yourself, 
+                we can teach you.
+
+        figure.figure
+          .figure__icon
+            +icon("octa")
+            +icon("clock")
+          figcaption.figure__text
+            dl
+              dt.figure__strong
+                | Deadline
+              dd.figure__regular.
+                Always stick to deadlines.
+                We understand that time
+                is money.
+  //END why
+
+  //BEGIN feedbacks
+  section.section.section_bg.feedbacks
+    .l
+      .heading
+        h2.heading__inner
+          | Feedbacks
+
+      .slider
+        .slide
+          .feedback
+            .feedback__ava
+              img(src="http://placehold.it/200x200", alt="")
+            blockquote.feedback__text
+              p.
+                Sed elementum fringilla odio, ac semper justo hendrerit auctor. 
+                In ac sapien fringilla, rhoncus est eget, pretium risus. 
+                Donec vitae turpis turpis. per est at nisl placerat dignissim. 
+                Tristique eget sem. Aliquam volutpat tristique placerat. 
+                Proin efficitur fringilla dictum. Vivamus tristique tempor tincidunt. 
+                Nunc semper est at nisl placerat dignissim. Tristique eget sem. 
+                Aliquam volutpat tristique placerat. Proin efficitur fringilla dictum. 
+                Cras consequat vestibulum sodales.
+
+              cite.feedback__person
+                strong.feedback__name David Bradson
+                span Serveral Devision
+        .slider__nav
+          button.slider__prev(type="button")
+            +icon("arrow")
+          button.slider__next(type="button")
+            +icon("arrow")
+  //END feedbacks

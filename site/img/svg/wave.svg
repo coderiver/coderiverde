@@ -1,0 +1,6 @@
+<svg width="10" height="5" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        wave
+    </title>
+    <path d="M10 1.155l-5 3.84-5-3.84V0l5 3.84L10 0v1.155z" fill="#000" fill-rule="evenodd"/>
+</svg>

@@ -13,6 +13,7 @@ var gulp         = require('gulp'),
     browserSync  = require('browser-sync'),
     cheerio      = require('gulp-cheerio'),
     spritesmith  = require('gulp.spritesmith'),
+    assets       = require('postcss-assets'),
     reload       = browserSync.reload;
 
 //** src paths **
@@ -75,6 +76,7 @@ gulp.task('jade-all', function() {
 gulp.task('sass', function() {
     var processors = [
         autoprefixer({browsers: ['last 4 versions'], cascade: false}),
+        assets({loadPaths: ['site/img/']})
     ];
 
     return sass(src.sass, {
@@ -124,6 +126,23 @@ gulp.task('svgsprite', function() {
         .pipe(gulp.dest(dest.img));
 });
 
+gulp.task('svgo', function() {
+    return gulp.src(src.svg + '/not-optimized/*.svg')
+      .pipe(svgmin({
+            js2svg: {
+                pretty: true
+            },
+            plugins: [{
+                removeDesc: true
+            },{
+                cleanupIDs: true
+            },{
+                mergePaths: false
+            }]
+        }))
+      .pipe(gulp.dest(dest.img + '/svg'));
+});
+
 // sprite
 gulp.task('sprite', function() {
     var spriteData = gulp.src(src.img + '/icons/*.png')
@@ -149,6 +168,7 @@ gulp.task('watch', function() {
     gulp.watch(src.jade + '/**/*.jade', ['jade']);
     gulp.watch([src.jade + '/_*.jade', src.jade + '/includes/*.jade'], ['jade-all']);
     gulp.watch(src.svg + '/icons/*.svg', ['svgsprite']);
+    gulp.watch(src.svg + '/not-optimized/*.svg', ['svgo']);
     gulp.watch(src.img + '/icons/*.png', ['sprite']);
 });
 
