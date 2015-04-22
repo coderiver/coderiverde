@@ -14,6 +14,11 @@
     bottom: 0
     background: $yellow
     z-index: -1
+  .logo
+    position: absolute
+    top: 50%
+    left: 10px
+    margin-top: -0.5em
 
 .header__row
   position: relative
@@ -30,10 +35,8 @@
   margin: -65px 0 0 -227px
 
 .logo
-  position: absolute
-  top: 50%
-  left: 10px
-  margin-top: -0.5em
+  display: inline-block
+  position: relative
   color: #000
   font-size: 40px
   line-height: 1
@@ -165,7 +168,7 @@
   text-align: center
 
 .heading
-  margin: 40px 0
+  margin: 30px 0
   font-size: 40px
   text-transform: uppercase
   text-align: center
@@ -175,6 +178,7 @@
 
 .heading__inner
   display: inline-block
+  vertical-align: middle
   font-weight: normal
   position: relative
   font-weight: normal
@@ -199,6 +203,23 @@
       left: 100%
       margin-left: 35px
 
+.heading_wheel
+  .heading__inner
+    padding: 4px 5px 2px
+    border: 2px solid
+    line-height: 34px
+  .icon-steering
+    margin: -25px 5px -24px
+
+.heading_fish
+  .icon-fish
+    vertical-align: middle
+    &:first-child
+      margin-right: 45px
+    &:last-child
+      margin-left: 45px
+      transform: scale(-1,1)
+
 .section
   padding: 35px 0
   position: relative
@@ -207,7 +228,7 @@
   z-index: 0
 
 .section_bg
-  background: #EDF0F7
+  background: $gray
 
 .figure-group
   font-size: 0
@@ -267,8 +288,7 @@
   letter-spacing: 0.01em
 
 .slider
-  margin: 40px 0
-  margin-left: 410px
+  margin-left: percentage(410/960)
   position: relative
 
 .slider__nav
@@ -320,3 +340,124 @@
   display: block
   +rob-b
   font-size: 16px
+
+.money-back
+  position: absolute
+  top: 40px
+  width: 310px
+  padding-bottom: 135px
+
+.money-back__text
+  position: relative
+  padding: 17px 29px
+  box-sizing: border-box
+  background: $gray
+  border: 17px solid #FFF
+  font-size: 28px
+  +rob
+  &:before,
+  &:after
+    content: ""
+    position: absolute
+    top: 100%
+    right: 0
+  &:before
+    +arr(64,50,#FFF,tr)
+    margin: 17px -17px 0 0
+  &:after
+    +arr(42,32,$gray,tr)
+
+.money-back__icon
+  position: absolute
+  bottom: 0
+  right: 0
+  margin: 0 -26px 0
+
+.logotypes
+  font-size: 0
+  text-align: center
+
+.logotypes__item
+  display: inline-block
+  vertical-align: middle
+  margin: 20px 30px
+  img
+    display: block
+
+.form
+  margin: 55px -10px 0
+  font-size: 0
+
+.form__field
+  padding: 0 10px
+  margin-bottom: 20px
+  box-sizing: border-box
+
+.form__field_half
+  display: inline-block
+  vertical-align: top
+  width: 50%
+
+.input
+  display: block
+  width: 100%
+  padding: 18px 20px
+  box-sizing: border-box
+  background: #FFF
+  +rob-b
+  font-size: 13px
+  text-transform: uppercase
+  line-height: 1.2
+  color: #333
+  border-radius: 3px
+  +placeholder
+    color: #333
+    line-height: normal
+
+.btn
+  display: block
+  margin: 40px auto 0
+  width: 295px
+  height: 66px
+  background: $yellow
+  +pol
+  font-size: 40px
+  text-transform: uppercase
+
+.contacts
+  +clr
+
+.contacts__left
+  float: left
+
+.contacts__right
+  float: right
+
+.contacts__center
+  text-align: center
+
+.contact
+  display: inline-block
+  vertical-align: top
+  +rob
+  font-size: 26px
+  color: #333
+  text-align: center
+
+.contact__icon
+  min-height: 53px
+  margin-bottom: 15px
+
+.contact__text
+  color: inherit
+  text-decoration: none
+
+.footer
+  padding: 24px 0
+  text-align: center
+  color: rgba(0,0,0,0.5)
+  +rob
+  font-size: 11px
+  letter-spacing: 0.025em
+  text-transform: uppercase
+  background: $gray

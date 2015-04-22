@@ -47,16 +47,21 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 
 .icon-steering { font-size: 80px; width: 0.9875em; }
 
-.icon-octa { font-size: 125px; fill: none; }
+.icon-octa { font-size: 125px; fill: none; stroke: #D0DBE0; }
+
+#icon-octa path { stroke: inherit; }
+
+.icon-phone { font-size: 53px; width: 0.64151em; }
 
 .header { position: relative; z-index: 0; padding: 3.96825% 0 70px; background: #fff000; color: #000; }
 .header:before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #fff000; z-index: -1; }
+.header .logo { position: absolute; top: 50%; left: 10px; margin-top: -0.5em; }
 
 .header__row { position: relative; max-width: 1260px; padding: 0 10px; margin: auto; text-align: right; }
 
 .header__triangles { position: absolute; z-index: -2; top: 100%; left: 50%; margin: -65px 0 0 -227px; }
 
-.logo { position: absolute; top: 50%; left: 10px; margin-top: -0.5em; color: #000; font-size: 40px; line-height: 1; text-transform: uppercase; text-decoration: none; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; }
+.logo { display: inline-block; position: relative; color: #000; font-size: 40px; line-height: 1; text-transform: uppercase; text-decoration: none; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; }
 .logo:before { content: ""; position: absolute; top: 100%; left: 2px; right: 0; height: 5px; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%20%20%20%3Ctitle%3E%20%20%20%20%20%20%20%20wave%20%20%20%20%3C%2Ftitle%3E%20%20%20%20%3Cpath%20d%3D%22M10%201.155l-5%203.84-5-3.84V0l5%203.84L10%200v1.155z%22%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat-x; }
 
 .say-hello { position: relative; display: inline-block; vertical-align: middle; padding: 3px 6px 2px; border: 2px solid #000; color: inherit; background: #fff000; font-size: 21px; line-height: 1; font-family: "Politica-Bold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; text-transform: uppercase; text-decoration: none; }
@@ -82,14 +87,21 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 
 .anim-text-box { margin: 100px 0; font-size: 238px; font-family: "Politica-Bold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; line-height: 1; text-align: center; }
 
-.heading { margin: 40px 0; font-size: 40px; text-transform: uppercase; text-align: center; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; }
+.heading { margin: 30px 0; font-size: 40px; text-transform: uppercase; text-align: center; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; }
 .heading:first-child { margin-top: 0; }
 
-.heading__inner { display: inline-block; font-weight: normal; position: relative; font-weight: normal; font-size: inherit; }
+.heading__inner { display: inline-block; vertical-align: middle; font-weight: normal; position: relative; font-weight: normal; font-size: inherit; }
 
 .heading_wave .heading__inner:before, .heading_wave .heading__inner:after { content: ""; position: absolute; top: 50%; width: 116px; height: 9px; margin-top: -5px; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2221%22%20height%3D%229%22%20viewBox%3D%220%200%2021%209%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%20%20%20%3Ctitle%3E%20%20%20%20%20%20%20%20wave-large%20%20%20%20%3C%2Ftitle%3E%20%20%20%20%3Cpath%20d%3D%22M21%202.082l-10.5%206.92L0%202.082V.002l10.5%206.92L21%20.002v2.08z%22%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat-x; }
 .heading_wave .heading__inner:before { right: 100%; margin-right: 35px; }
 .heading_wave .heading__inner:after { left: 100%; margin-left: 35px; }
+
+.heading_wheel .heading__inner { padding: 4px 5px 2px; border: 2px solid; line-height: 34px; }
+.heading_wheel .icon-steering { margin: -25px 5px -24px; }
+
+.heading_fish .icon-fish { vertical-align: middle; }
+.heading_fish .icon-fish:first-child { margin-right: 45px; }
+.heading_fish .icon-fish:last-child { margin-left: 45px; -webkit-transform: scale(-1, 1); -ms-transform: scale(-1, 1); transform: scale(-1, 1); }
 
 .section { padding: 35px 0; position: relative; box-sizing: border-box; min-height: 400px; z-index: 0; }
 
@@ -112,7 +124,7 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 
 .figure__regular { font-family: "Roboto-Light", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: 0.01em; }
 
-.slider { margin: 40px 0; margin-left: 410px; position: relative; }
+.slider { margin-left: 42.70833%; position: relative; }
 
 .slider__nav { position: absolute; bottom: -5px; left: 25px; }
 
@@ -134,6 +146,51 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 .feedback__person { display: block; margin-top: 40px; font-style: normal; font-weight: normal; font-size: 13px; }
 
 .feedback__name { display: block; font-family: "Roboto-Bold", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; }
+
+.money-back { position: absolute; top: 40px; width: 310px; padding-bottom: 135px; }
+
+.money-back__text { position: relative; padding: 17px 29px; box-sizing: border-box; background: #EDF0F7; border: 17px solid #FFF; font-size: 28px; font-family: "Roboto-Regular", Helvetica, Arial, sans-serif; font-weight: normal; }
+.money-back__text:before, .money-back__text:after { content: ""; position: absolute; top: 100%; right: 0; }
+.money-back__text:before { width: 0px; height: 0px; border-style: solid; border-width: 0 64px 50px 0; border-color: transparent #FFF transparent transparent; margin: 17px -17px 0 0; }
+.money-back__text:after { width: 0px; height: 0px; border-style: solid; border-width: 0 42px 32px 0; border-color: transparent #EDF0F7 transparent transparent; }
+
+.money-back__icon { position: absolute; bottom: 0; right: 0; margin: 0 -26px 0; }
+
+.logotypes { font-size: 0; text-align: center; }
+
+.logotypes__item { display: inline-block; vertical-align: middle; margin: 20px 30px; }
+.logotypes__item img { display: block; }
+
+.form { margin: 55px -10px 0; font-size: 0; }
+
+.form__field { padding: 0 10px; margin-bottom: 20px; box-sizing: border-box; }
+
+.form__field_half { display: inline-block; vertical-align: top; width: 50%; }
+
+.input { display: block; width: 100%; padding: 18px 20px; box-sizing: border-box; background: #FFF; font-family: "Roboto-Bold", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 13px; text-transform: uppercase; line-height: 1.2; color: #333; border-radius: 3px; }
+.input:-ms-input-placeholder { color: #333; line-height: normal; }
+.input::-moz-placeholder { color: #333; line-height: normal; }
+.input::-webkit-input-placeholder { color: #333; line-height: normal; }
+.input::placeholder { color: #333; line-height: normal; }
+
+.btn { display: block; margin: 40px auto 0; width: 295px; height: 66px; background: #fff000; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; font-size: 40px; text-transform: uppercase; }
+
+.contacts { *zoom: 1; }
+.contacts:after { content: " "; display: table; clear: both; }
+
+.contacts__left { float: left; }
+
+.contacts__right { float: right; }
+
+.contacts__center { text-align: center; }
+
+.contact { display: inline-block; vertical-align: top; font-family: "Roboto-Regular", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 26px; color: #333; text-align: center; }
+
+.contact__icon { min-height: 53px; margin-bottom: 15px; }
+
+.contact__text { color: inherit; text-decoration: none; }
+
+.footer { padding: 24px 0; text-align: center; color: rgba(0, 0, 0, 0.5); font-family: "Roboto-Regular", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 11px; letter-spacing: 0.025em; text-transform: uppercase; background: #EDF0F7; }
 
 
 

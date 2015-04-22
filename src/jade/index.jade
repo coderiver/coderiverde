@@ -98,6 +98,15 @@ block content
         h2.heading__inner
           | Feedbacks
 
+      .money-back
+        p.money-back__text.
+          We will return 
+          your money back
+          if you would not
+          be satisfied
+        .money-back__icon
+          +icon("dollar")
+
       .slider
         .slide
           .feedback
@@ -123,3 +132,77 @@ block content
           button.slider__next(type="button")
             +icon("arrow")
   //END feedbacks
+
+  //BEGIN tech
+  section.section.tech
+    .l
+      .heading.heading_wheel
+        h2.heading__inner
+          | Technologies
+          +icon("steering")
+          |  we are using
+
+      ul.logotypes
+        li.logotypes__item
+          img(src="img/logotypes/sass.png", alt="sass logotype")
+        li.logotypes__item
+          img(src="img/logotypes/wordpress.png", alt="wordpress logotype")
+        li.logotypes__item
+          img(src="img/logotypes/bootstrap.png", alt="bootstrap logotype")
+        li.logotypes__item
+          img(src="img/logotypes/git.png", alt="git logotype")
+        li.logotypes__item
+          img(src="img/logotypes/js.png", alt="js logotype")
+        li.logotypes__item
+          img(src="img/logotypes/html5.png", alt="html5 logotype")
+        li.logotypes__item
+          img(src="img/logotypes/gulp.png", alt="gulp logotype")
+  //END tech
+
+  //BEGIN order
+  section.section.section_bg.order
+    .l
+      .heading.heading_fish
+        +icon("fish")
+        h2.heading__inner
+          | Order HTML/CSS
+        +icon("fish")
+
+      form.form
+        .form__field.form__field_half
+          input.input(type="text", name="NAME", placeholder="Name")
+        .form__field.form__field_half
+          input.input(type="email", name="EMAIL", placeholder="Your e-mail")
+        .form__field
+          input.input(type="text", name="PHONE", placeholder="Your skype or phone")
+        button.btn(type="submit") Send
+  //END order
+
+  //BEGIN contacts
+  section.section
+    .l
+      .contacts
+        .contacts__left
+          .contact
+            .contact__icon
+              +icon("letter")
+            a.contact__text(href="mailto:html@coderiver.com.ua")
+              | html@coderiver.com.ua
+        
+        .contacts__right
+          .contact
+            .contact__icon
+              +icon("phone")
+            a.contact__text(href="tel:+380969706428")
+              | +380 (96) 970 64 28
+
+        .contacts__center
+          a.logo(href="/")
+            | Coderiver 
+  //END contacts
+
+  //BEGIN footer
+  footer.footer
+    .l
+      p Copyright © 2015 All rights reserved.
+  //END footer
