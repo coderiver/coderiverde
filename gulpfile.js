@@ -9,7 +9,7 @@ var gulp         = require('gulp'),
     plumber      = require('gulp-plumber'),
     changed      = require('gulp-changed'),
     svgmin       = require('gulp-svgmin'),
-    svgSprite    = require('gulp-svg-sprites'),
+    // svgSprite    = require('gulp-svg-sprites'),
     browserSync  = require('browser-sync'),
     cheerio      = require('gulp-cheerio'),
     spritesmith  = require('gulp.spritesmith'),
@@ -80,51 +80,51 @@ gulp.task('sass', function() {
     ];
 
     return sass(src.sass, {
-        sourcemap: true,
+        sourcemap: false,
         style: 'compact'
     })
     .on('error', function (err) {
       console.error('Error', err.message);
     })
-    .pipe(postcss(processors))
-    .pipe(sourcemaps.write('./'))
+    // .pipe(postcss(processors))
+    // .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(dest.css));
 });
 
 //svg sprite
-gulp.task('svgsprite', function() {
-    return gulp.src(src.svg + '/icons/*.svg')
-        .pipe(svgmin({
-            js2svg: {
-                pretty: true
-            },
-            plugins: [{
-                removeDesc: true
-            }]
-        }))
-        .pipe(cheerio({
-            run: function ($, file) {
-                $('[fill]:not([fill="currentColor"])').removeAttr('fill');
-            },
-            parserOptions: { xmlMode: true }
-        }))
-        .pipe(svgSprite({
-            mode: "symbols",
-            selector: "icon-%f",
-            preview: false,
-            svg: {
-                symbols: 'icons.svg'
-            }
-            // templates: {
-            //     css: require('fs').readFileSync('sass/lib/sprite-template.scss', "utf-8")
-            // },
-            // cssFile: '../sass/_svg-sprite.sass',
-            // svgPath: '../img/sprites/%f',
-            // pngPath: '../img/sprites/%f',
-            // padding: 10
-        }))
-        .pipe(gulp.dest(dest.img));
-});
+// gulp.task('svgsprite', function() {
+//     return gulp.src(src.svg + '/icons/*.svg')
+//         .pipe(svgmin({
+//             js2svg: {
+//                 pretty: true
+//             },
+//             plugins: [{
+//                 removeDesc: true
+//             }]
+//         }))
+//         .pipe(cheerio({
+//             run: function ($, file) {
+//                 $('[fill]:not([fill="currentColor"])').removeAttr('fill');
+//             },
+//             parserOptions: { xmlMode: true }
+//         }))
+//         .pipe(svgSprite({
+//             mode: "symbols",
+//             selector: "icon-%f",
+//             preview: false,
+//             svg: {
+//                 symbols: 'icons.svg'
+//             }
+//             // templates: {
+//             //     css: require('fs').readFileSync('sass/lib/sprite-template.scss', "utf-8")
+//             // },
+//             // cssFile: '../sass/_svg-sprite.sass',
+//             // svgPath: '../img/sprites/%f',
+//             // pngPath: '../img/sprites/%f',
+//             // padding: 10
+//         }))
+//         .pipe(gulp.dest(dest.img));
+// });
 
 gulp.task('svgo', function() {
     return gulp.src(src.svg + '/not-optimized/*.svg')

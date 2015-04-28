@@ -21,8 +21,12 @@ block content
         | Coderiver
 
     .l
-      .anim-text-box
-        | SERVICE
+      .anim-box
+        .canvas
+          - var n = 0 
+              while n < 140 
+                //- div.p.p#{$n}= n++
+                div.p(class='p'+n++)
       p.promo-text
         span.promo-text__row
           | We specialize in doing top notch HTML / CSS / Javscript
