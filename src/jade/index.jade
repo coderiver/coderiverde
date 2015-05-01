@@ -12,9 +12,9 @@ block content
   header.header
     .header__row
       .header__right
-        button.say-hello(type="button")
+        button.js-scroll.say-hello(type="button",data-goto="order")
           | Say hello
-        button.menu-btn(type="button")
+        button.js-scroll.menu-btn(type="button",data-goto="why")
           i.menu-btn__inner
       
       a.logo(href="/")
@@ -36,7 +36,7 @@ block content
   //END header
 
   //BEGIN why
-  section.section.why
+  section.section.why#why
     .l
       .heading.heading_wave
         h2.heading__inner Why us
@@ -162,7 +162,7 @@ block content
   //END tech
 
   //BEGIN order
-  section.section.section_bg.order
+  section.section.section_bg.order#order
     .l
       .heading.heading_fish
         +icon("fish")
@@ -176,7 +176,7 @@ block content
         .form__field.form__field_half
           input.input(type="email", name="EMAIL", placeholder="Your e-mail")
         .form__field
-          input.input(type="text", name="PHONE", placeholder="Your skype or phone")
+          input.input(type="text", name="PHONE", placeholder="Your skype or phone, or just say hello")
         button.btn(type="submit") Send
   //END order
 

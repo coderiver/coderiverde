@@ -55,8 +55,8 @@
       <header class="header">
         <div class="header__row">
           <div class="header__right">
-            <button type="button" class="say-hello">Say hello</button>
-            <button type="button" class="menu-btn"><i class="menu-btn__inner"></i></button>
+            <button type="button" data-goto="order" class="js-scroll say-hello">Say hello</button>
+            <button type="button" data-goto="why" class="js-scroll menu-btn"><i class="menu-btn__inner"></i></button>
           </div><a href="/" class="logo">Coderiver</a>
         </div>
         <div class="l">
@@ -236,7 +236,7 @@
       </header>
       <!--END header-->
       <!--BEGIN why-->
-      <section class="section why">
+      <section id="why" class="section why">
         <div class="l">
           <div class="heading heading_wave">
             <h2 class="heading__inner">Why us</h2>
@@ -405,7 +405,7 @@
       </section>
       <!--END tech-->
       <!--BEGIN order-->
-      <section class="section section_bg order">
+      <section id="order" class="section section_bg order">
         <div class="l">
           <div class="heading heading_fish">
             <svg class="icon icon-fish">
@@ -424,7 +424,7 @@
               <input type="email" name="EMAIL" placeholder="Your e-mail" class="input">
             </div>
             <div class="form__field">
-              <input type="text" name="PHONE" placeholder="Your skype or phone" class="input">
+              <input type="text" name="PHONE" placeholder="Your skype or phone, or just say hello" class="input">
             </div>
             <button type="submit" class="btn">Send</button>
           </form>
