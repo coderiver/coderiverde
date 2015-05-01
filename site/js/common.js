@@ -1,7 +1,7 @@
 head.ready(function() {
-	// $('body').click(function(event) {
-	// 	$(this).toggleClass('figure1');
-	// });
+	$('body').click(function(event) {
+		changeClass();
+	});
 
 
 	var i = 0; 
