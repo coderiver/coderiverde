@@ -1,5 +1,6 @@
-.out .section
-  display: none
+.out 
+  +r(700)
+    overflow: hidden
 .header
   position: relative
   z-index: 0
@@ -91,6 +92,8 @@
   background: none
   text-decoration: none
   color: inherit
+  +r(600)
+    margin-left: 20px 
   &:hover
     color: red
     .menu-btn__inner
@@ -159,6 +162,13 @@
   display: inline-block
   border: 2px solid
   border-width: 2px 0
+  +r(700)
+    border: none
+    margin-bottom: 10px 
+    font-size: 80% 
+    br
+      display: none
+  
   & + &
     margin-top: -2px
 
@@ -171,13 +181,16 @@
   padding-bottom: 70%  
   z-index: -1 
   position: relative
+  +r(700)
+    margin: 0 auto
+    margin-top: -5%
+    margin-bottom: -5%   
   .canvas
     position: absolute
     top: 0
     left: 0
     width: 100%
     height: 100%    
-
 .heading
   margin: 30px 0
   font-size: 40px
@@ -219,12 +232,18 @@
     padding: 4px 5px 2px
     border: 2px solid
     line-height: 34px
+    +r(600)
+      border: none
   .icon-steering
     margin: -25px 5px -24px
+    +r(600)
+      display: none
 
 .heading_fish
   .icon-fish
     vertical-align: middle
+    +r(600)
+      display: none
     &:first-child
       margin-right: 45px
     &:last-child
@@ -244,6 +263,8 @@
 .figure-group
   font-size: 0
   margin: 0 -15px
+  +r(1000)
+    margin: 0 
 
 .figure
   display: inline-block
@@ -254,6 +275,13 @@
   text-align: center
   font-size: 16px
   cursor: default
+  +r(950)
+    width: 50% 
+    margin-bottom: 20px 
+  +r(600)
+    width: 100% 
+    text-align: left
+    position: relative
   &:hover
     .figure__icon
       .icon-octa
@@ -262,28 +290,56 @@
         transform: scale(1.2)
     .figure__strong
       box-shadow: 0 4px 0 -2px $yellow
+  .figure__text
+    +r(600)
+      overflow: hidden
+      position: relative
+      z-index: 10 
+      margin-left: 100px 
 
 .figure__icon
   position: relative
   height: 125px
   line-height: 125px
   margin-bottom: 40px
+  +r(600)
+    float: left
+    margin-right: 40px 
+    position: absolute
+    left: 15px
+    top: 0 
+    height: auto 
+    line-height: 1 
   .icon
     vertical-align: middle
     position: relative
+    +r(600)
+      width: 70px 
+      text-align: center
+      top: 0  
   .icon-octa
     position: absolute
     top: 0
-    left: 50%
+    left: 50% 
     margin-left: -0.5em
     transition: all 0.2s linear
     fill: rgba(0,0,0,0.0)
+    +r(600)
+      display: none
   .icon-diamond
     top: 4px
   .icon-eye
     top: -5px
+    +r(600)
+      top: 5px 
   .icon-letter
     top: 2px
+    +r(600)
+      top: 4px 
+  .icon-clock
+    +r(600)
+      top: 4px
+
 
 .figure__strong
   position: relative
@@ -293,6 +349,9 @@
   line-height: 1.38
   +rob
   transition: box-shadow 0.2s linear
+  +r(600)
+    margin-bottom: 5px 
+    font-size: 20px 
 
 .figure__regular
   +rob-l
@@ -301,11 +360,14 @@
 .slider
   margin-left: percentage(410/960)
   position: relative
+  +r(830)
+    margin: 0 
 
 .slider__nav
   position: absolute
   bottom: -5px
   left: 25px
+  
 
 .slider__prev,
 .slider__next
@@ -332,6 +394,8 @@
   width: 128px
   height: 128px
   overflow: hidden
+  +r(600)
+    display: none
   img
     display: block
     max-width: 100%
@@ -339,6 +403,8 @@
 
 .feedback__text
   margin-left: 165px
+  +r(600)
+    margin-left: 0 
 
 .feedback__person
   display: block
@@ -346,6 +412,8 @@
   font-style: normal
   font-weight: normal
   font-size: 13px
+  +r(600)
+    margin-left: 165px 
 
 .feedback__name
   display: block
@@ -357,6 +425,15 @@
   top: 40px
   width: 310px
   padding-bottom: 135px
+  +r(830)
+    margin: 0 
+    position: relative
+    top: 0
+    left: 0
+    width: auto   
+    padding-bottom: 70px 
+  .icon
+    display: none
 
 .money-back__text
   position: relative
@@ -398,6 +475,8 @@
 .form
   margin: 55px -10px 0
   font-size: 0
+  +r(600)
+    margin-top: 24px 
 
 .form__field
   padding: 0 10px
@@ -443,10 +522,18 @@
 
 .contacts__right
   float: right
-
+.contacts__left,.contacts__right
+  +r(640)
+    float: none
+    margin-bottom: 20px 
+    display: block
+    
 .contacts__center
   text-align: center
-
+  width: 344px 
+  margin: 0 auto
+  +r(800)
+    display: none
 .contact
   display: inline-block
   vertical-align: top
@@ -454,15 +541,69 @@
   font-size: 26px
   color: #333
   text-align: center
+  +r(640)
+    display: block
 
 .contact__icon
   min-height: 53px
   margin-bottom: 15px
-
+  svg
+    vertical-align: top
+$trw: 173px
+$trw1: 150px
 .contact__text
   color: inherit
   text-decoration: none
-
+.contacts__tris
+  position: relative
+  min-height: 340px 
+  margin-bottom: 50px 
+  .contacts__tri1
+    width: 0
+    height: 0
+    border-left: $trw solid transparent
+    border-right: $trw solid transparent
+    border-bottom: $trw*1.73 solid #000
+    position: absolute
+    top: 40px
+    left: 0 
+    transform: rotate(180deg)
+    z-index: 9 
+  .contacts__tri2
+    width: 0
+    height: 0
+    border-left: $trw solid transparent
+    border-right: $trw solid transparent
+    border-bottom: $trw*1.73 solid #FEEE35
+    position: absolute
+    left: 0
+    z-index: 5  
+  .contacts__tri3 
+    width: 0
+    height: 0
+    border-left: $trw1 solid transparent
+    border-right: $trw1 solid transparent
+    border-bottom: $trw1*1.73 solid #fff
+    position: absolute
+    left: 23px
+    top: 26px 
+    z-index: 6
+  .contacts__text
+    font-size: 40px 
+    z-index: 10 
+    text-transform: uppercase
+    +pol
+    position: absolute
+    width: 100%
+    left: 0
+    top: 65px  
+    text-align: center 
+    color: #FFF 
+  .logo
+    position: absolute
+    bottom: -50px 
+    left: 0
+    width: 100%  
 .footer
   padding: 24px 0
   text-align: center
