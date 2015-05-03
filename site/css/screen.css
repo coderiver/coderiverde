@@ -64,7 +64,7 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 .header__triangles { position: absolute; z-index: -2; top: 100%; left: 50%; margin: -65px 0 0 -227px; }
 
 .logo { display: inline-block; position: relative; color: #000; font-size: 40px; line-height: 1; text-transform: uppercase; text-decoration: none; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; }
-.logo:before { content: ""; position: absolute; top: 100%; left: 2px; right: 0; height: 5px; background-image: inline("svg/wave.svg"); background-repeat: repeat-x; }
+.logo:before { content: ""; position: absolute; top: 100%; left: 2px; right: 0; height: 5px; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%20%20%20%3Ctitle%3E%20%20%20%20%20%20%20%20wave%20%20%20%20%3C%2Ftitle%3E%20%20%20%20%3Cpath%20d%3D%22M10%201.155l-5%203.84-5-3.84V0l5%203.84L10%200v1.155z%22%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat-x; }
 
 .say-hello { position: relative; display: inline-block; vertical-align: middle; padding: 3px 6px 2px; border: 2px solid #000; color: inherit; background: #fff000; font-size: 21px; line-height: 1; font-family: "Politica-Bold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; text-transform: uppercase; text-decoration: none; }
 .say-hello:before { content: ""; position: absolute; top: 100%; left: 8px; width: 0px; height: 0px; border-style: solid; border-width: 0 10px 10px 0; border-color: transparent #000 transparent transparent; }
@@ -73,18 +73,18 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 .menu-btn { position: relative; display: inline-block; vertical-align: middle; width: 30px; height: 30px; margin-left: 48px; background: none; text-decoration: none; color: inherit; }
 @media only screen and (max-width: 600px) { .menu-btn { margin-left: 20px; } }
 .menu-btn:hover { color: red; }
-.menu-btn:hover .menu-btn__inner { transform: rotate(90deg); background: red; }
-.menu-btn:hover .menu-btn__inner:before { transform: rotate(35deg); width: 50%; margin-bottom: 2px; background: red; }
-.menu-btn:hover .menu-btn__inner:after { transform: rotate(-35deg); width: 50%; margin-top: 2px; background: red; }
+.menu-btn:hover .menu-btn__inner { -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); background: red; }
+.menu-btn:hover .menu-btn__inner:before { -webkit-transform: rotate(35deg); -ms-transform: rotate(35deg); transform: rotate(35deg); width: 50%; margin-bottom: 2px; background: red; }
+.menu-btn:hover .menu-btn__inner:after { -webkit-transform: rotate(-35deg); -ms-transform: rotate(-35deg); transform: rotate(-35deg); width: 50%; margin-top: 2px; background: red; }
 
-.menu-btn__inner { position: absolute; top: 50%; left: 50%; margin: -1px 0 0 -13px; box-sizing: border-box; width: 26px; height: 2px; background: #000; transition: all 0.2s linear; }
-.menu-btn__inner:before, .menu-btn__inner:after { content: ""; position: absolute; right: 0; width: 100%; height: 100%; transition: all 0.2s linear; background: inherit; }
+.menu-btn__inner { position: absolute; top: 50%; left: 50%; margin: -1px 0 0 -13px; box-sizing: border-box; width: 26px; height: 2px; background: #000; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
+.menu-btn__inner:before, .menu-btn__inner:after { content: ""; position: absolute; right: 0; width: 100%; height: 100%; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; background: inherit; }
 .menu-btn__inner:before { bottom: 100%; margin-bottom: 4px; }
 .menu-btn__inner:after { top: 100%; margin-top: 4px; }
 
 .promo-text { position: relative; max-width: 800px; box-sizing: border-box; margin: auto; font-size: 32px; line-height: 1.15; line-height: 37px; color: inherit; text-align: center; text-transform: uppercase; font-family: "Politica-Bold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; }
 
-.promo-text__row { background-image: linear-gradient(black 0%, #000 100%), linear-gradient(black 0%, #000 100%); background-repeat: repeat-x, repeat-x; background-size: 1px 2px, 1px 2px; background-position: 0 95%, 0 5%; }
+.promo-text__row { background-image: -webkit-linear-gradient(black 0%, #000 100%), -webkit-linear-gradient(black 0%, #000 100%); background-image: linear-gradient(black 0%, #000 100%), linear-gradient(black 0%, #000 100%); background-repeat: repeat-x, repeat-x; background-size: 1px 2px, 1px 2px; background-position: 0 95%, 0 5%; }
 @media only screen and (max-width: 700px) { .promo-text__row { border: none; margin-bottom: 10px; font-size: 80%; background: none; }
   .promo-text__row br { display: none; } }
 .promo-text__row + .promo-text__row { margin-top: -2px; }
@@ -98,7 +98,7 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 
 .heading__inner { display: inline-block; vertical-align: middle; font-weight: normal; position: relative; font-weight: normal; font-size: inherit; }
 
-.heading_wave .heading__inner:before, .heading_wave .heading__inner:after { content: ""; position: absolute; top: 50%; width: 116px; height: 9px; margin-top: -5px; background-image: inline("svg/wave-large.svg"); background-repeat: repeat-x; }
+.heading_wave .heading__inner:before, .heading_wave .heading__inner:after { content: ""; position: absolute; top: 50%; width: 116px; height: 9px; margin-top: -5px; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2221%22%20height%3D%229%22%20viewBox%3D%220%200%2021%209%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%20%20%20%3Ctitle%3E%20%20%20%20%20%20%20%20wave-large%20%20%20%20%3C%2Ftitle%3E%20%20%20%20%3Cpath%20d%3D%22M21%202.082l-10.5%206.92L0%202.082V.002l10.5%206.92L21%20.002v2.08z%22%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E'); background-repeat: repeat-x; }
 .heading_wave .heading__inner:before { right: 100%; margin-right: 35px; }
 .heading_wave .heading__inner:after { left: 100%; margin-left: 35px; }
 
@@ -110,7 +110,7 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 .heading_fish .icon-fish { vertical-align: middle; }
 @media only screen and (max-width: 600px) { .heading_fish .icon-fish { display: none; } }
 .heading_fish .icon-fish:first-child { margin-right: 45px; }
-.heading_fish .icon-fish:last-child { margin-left: 45px; transform: scale(-1, 1); }
+.heading_fish .icon-fish:last-child { margin-left: 45px; -webkit-transform: scale(-1, 1); -ms-transform: scale(-1, 1); transform: scale(-1, 1); }
 
 .section { padding: 35px 0; position: relative; box-sizing: border-box; min-height: 400px; z-index: 0; }
 
@@ -122,7 +122,7 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 .figure { display: inline-block; vertical-align: top; padding: 0 10px; width: 25%; box-sizing: border-box; text-align: center; font-size: 16px; cursor: default; }
 @media only screen and (max-width: 950px) { .figure { width: 50%; margin-bottom: 20px; } }
 @media only screen and (max-width: 600px) { .figure { width: 100%; text-align: left; position: relative; } }
-.figure:hover .figure__icon .icon-octa { fill: #fff000; stroke: #fff000; transform: scale(1.2); }
+.figure:hover .figure__icon .icon-octa { fill: #fff000; stroke: #fff000; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
 .figure:hover .figure__strong { box-shadow: 0 4px 0 -2px #fff000; }
 @media only screen and (max-width: 600px) { .figure .figure__text { overflow: hidden; position: relative; z-index: 10; margin-left: 100px; } }
 
@@ -130,7 +130,7 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 @media only screen and (max-width: 600px) { .figure__icon { float: left; margin-right: 40px; position: absolute; left: 15px; top: 0; height: auto; line-height: 1; } }
 .figure__icon .icon { vertical-align: middle; position: relative; }
 @media only screen and (max-width: 600px) { .figure__icon .icon { width: 70px; text-align: center; top: 0; } }
-.figure__icon .icon-octa { position: absolute; top: 0; left: 50%; margin-left: -0.5em; transition: all 0.2s linear; fill: transparent; }
+.figure__icon .icon-octa { position: absolute; top: 0; left: 50%; margin-left: -0.5em; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; fill: transparent; }
 @media only screen and (max-width: 600px) { .figure__icon .icon-octa { display: none; } }
 .figure__icon .icon-diamond { top: 4px; }
 .figure__icon .icon-eye { top: -5px; }
@@ -139,7 +139,7 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 @media only screen and (max-width: 600px) { .figure__icon .icon-letter { top: 4px; } }
 @media only screen and (max-width: 600px) { .figure__icon .icon-clock { top: 4px; } }
 
-.figure__strong { position: relative; display: inline-block; margin-bottom: 20px; font-size: 26px; line-height: 1.38; font-family: "Roboto-Regular", Helvetica, Arial, sans-serif; font-weight: normal; transition: box-shadow 0.2s linear; }
+.figure__strong { position: relative; display: inline-block; margin-bottom: 20px; font-size: 26px; line-height: 1.38; font-family: "Roboto-Regular", Helvetica, Arial, sans-serif; font-weight: normal; -webkit-transition: box-shadow 0.2s linear; transition: box-shadow 0.2s linear; }
 @media only screen and (max-width: 600px) { .figure__strong { margin-bottom: 5px; font-size: 20px; } }
 
 .figure__regular { font-family: "Roboto-Light", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: 0.01em; }
@@ -150,11 +150,11 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 .slider__nav { position: absolute; bottom: -5px; left: 25px; }
 
 .slider__prev, .slider__next { background: none; text-decoration: none; color: inherit; }
-.slider__prev .icon, .slider__next .icon { transition: fill 0.2s linear; }
+.slider__prev .icon, .slider__next .icon { -webkit-transition: fill 0.2s linear; transition: fill 0.2s linear; }
 .slider__prev:hover .icon, .slider__next:hover .icon { fill: #fff000; }
 
 .slider__next { margin-left: 22px; }
-.slider__next .icon { transform: scale(-1, -1); }
+.slider__next .icon { -webkit-transform: scale(-1, -1); -ms-transform: scale(-1, -1); transform: scale(-1, -1); }
 
 .feedback { color: #333; *zoom: 1; }
 .feedback:after { content: " "; display: table; clear: both; }
@@ -196,7 +196,6 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 
 .input { display: block; width: 100%; padding: 18px 20px; box-sizing: border-box; background: #FFF; font-family: "Roboto-Bold", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 13px; text-transform: uppercase; line-height: 1.2; color: #333; border-radius: 3px; }
 .input:-ms-input-placeholder { color: #333; line-height: normal; }
-.input:-moz-placeholder { color: #333; line-height: normal; }
 .input::-moz-placeholder { color: #333; line-height: normal; }
 .input::-webkit-input-placeholder { color: #333; line-height: normal; }
 .input::placeholder { color: #333; line-height: normal; }
@@ -225,11 +224,11 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 .contact__text { color: inherit; text-decoration: none; }
 
 .contacts__tris { position: relative; min-height: 340px; margin-bottom: 50px; }
-.contacts__tris .contacts__tri1 { width: 0; height: 0; border-left: 173px solid transparent; border-right: 173px solid transparent; border-bottom: 299.29px solid #000; position: absolute; top: 40px; left: 0; transform: rotate(180deg); z-index: 9; }
+.contacts__tris .contacts__tri1 { width: 0; height: 0; border-left: 173px solid transparent; border-right: 173px solid transparent; border-bottom: 299.29px solid #000; position: absolute; top: 40px; left: 0; -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); z-index: 9; }
 .contacts__tris .contacts__tri2 { width: 0; height: 0; border-left: 173px solid transparent; border-right: 173px solid transparent; border-bottom: 299.29px solid #FEEE35; position: absolute; left: 0; z-index: 5; }
 .contacts__tris .contacts__tri3 { width: 0; height: 0; border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 259.5px solid #fff; position: absolute; left: 23px; top: 26px; z-index: 6; }
 .contacts__tris .contacts__text { font-size: 40px; z-index: 10; text-transform: uppercase; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; position: absolute; width: 100%; left: 0; top: 65px; text-align: center; color: #FFF; }
-.contacts__tris .logo { position: absolute; bottom: -50px; left: 0; width: 100%; }
+.contacts__tris .logo { position: absolute; bottom: -50px; left: 50%; margin-left: -66px; }
 
 .footer { padding: 24px 0; text-align: center; color: rgba(0, 0, 0, 0.5); font-family: "Roboto-Regular", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 11px; letter-spacing: 0.025em; text-transform: uppercase; background: #EDF0F7; }
 
@@ -238,288 +237,288 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
   50% { opacity: 1; }
   65% { opacity: 0; }
   100% { opacity: 0; } }
-.canvas .p { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; overflow: hidden; transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55); transition: all 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.canvas .p { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; overflow: hidden; -webkit-transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55); transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55); -webkit-transition: all 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275); transition: all 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .canvas .p:before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #fff; content: " "; opacity: 0; }
 
-.p1 { -webkit-clip-path: polygon(16.11% 31.88%, 13.43% 36.12%, 20.51% 37.78%); background: #4d4800; transition-delay: 313ms !important; }
+.p1 { -webkit-clip-path: polygon(16.11% 31.88%, 13.43% 36.12%, 20.51% 37.78%); background: #e6d800; -webkit-transition-delay: 32ms !important; transition-delay: 32ms !important; }
 
-.p2 { -webkit-clip-path: polygon(19.93% 29.33%, 16.11% 31.88%, 20.51% 37.78%); background: #4d4800; transition-delay: 102ms !important; }
+.p2 { -webkit-clip-path: polygon(19.93% 29.33%, 16.11% 31.88%, 20.51% 37.78%); background: #e6d800; -webkit-transition-delay: 496ms !important; transition-delay: 496ms !important; }
 
-.p3 { -webkit-clip-path: polygon(22.39% 36.47%, 19.93% 29.33%, 20.51% 37.78%); background: #999000; transition-delay: 322ms !important; }
+.p3 { -webkit-clip-path: polygon(22.39% 36.47%, 19.93% 29.33%, 20.51% 37.78%); background: #FFF000; -webkit-transition-delay: 378ms !important; transition-delay: 378ms !important; }
 
-.p4 { -webkit-clip-path: polygon(24.49% 36.08%, 19.93% 29.33%, 22.39% 36.47%); background: #666000; transition-delay: 236ms !important; }
+.p4 { -webkit-clip-path: polygon(24.49% 36.08%, 19.93% 29.33%, 22.39% 36.47%); background: #ccc000; -webkit-transition-delay: 86ms !important; transition-delay: 86ms !important; }
 
-.p5 { -webkit-clip-path: polygon(29.58% 29.45%, 24.3% 28.48%, 27.78% 36.72%); background: #666000; transition-delay: 365ms !important; }
+.p5 { -webkit-clip-path: polygon(29.58% 29.45%, 24.3% 28.48%, 27.78% 36.72%); background: #b3a800; -webkit-transition-delay: 244ms !important; transition-delay: 244ms !important; }
 
-.p6 { -webkit-clip-path: polygon(20.51% 37.78%, 13.43% 36.12%, 19.18% 40.15%); background: #807800; transition-delay: 317ms !important; }
+.p6 { -webkit-clip-path: polygon(20.51% 37.78%, 13.43% 36.12%, 19.18% 40.15%); background: #ccc000; -webkit-transition-delay: 5ms !important; transition-delay: 5ms !important; }
 
-.p7 { -webkit-clip-path: polygon(27.78% 36.72%, 24.3% 28.48%, 24.49% 36.08%); background: #FFF000; transition-delay: 151ms !important; }
+.p7 { -webkit-clip-path: polygon(27.78% 36.72%, 24.3% 28.48%, 24.49% 36.08%); background: #4d4800; -webkit-transition-delay: 92ms !important; transition-delay: 92ms !important; }
 
-.p8 { -webkit-clip-path: polygon(24.3% 28.48%, 19.93% 29.33%, 24.49% 36.08%); background: #999000; transition-delay: 465ms !important; }
+.p8 { -webkit-clip-path: polygon(24.3% 28.48%, 19.93% 29.33%, 24.49% 36.08%); background: #999000; -webkit-transition-delay: 361ms !important; transition-delay: 361ms !important; }
 
-.p9 { -webkit-clip-path: polygon(32.31% 36.02%, 29.58% 29.45%, 27.78% 36.72%); background: #666000; transition-delay: 438ms !important; }
+.p9 { -webkit-clip-path: polygon(32.31% 36.02%, 29.58% 29.45%, 27.78% 36.72%); background: #b3a800; -webkit-transition-delay: 447ms !important; transition-delay: 447ms !important; }
 
-.p10 { -webkit-clip-path: polygon(12.39% 43.73%, 12.39% 49.47%, 18.65% 48.67%); background: #e6d800; transition-delay: 88ms !important; }
+.p10 { -webkit-clip-path: polygon(12.39% 43.73%, 12.39% 49.47%, 18.65% 48.67%); background: #FFF000; -webkit-transition-delay: 442ms !important; transition-delay: 442ms !important; }
 
-.p11 { -webkit-clip-path: polygon(18.65% 48.67%, 12.39% 49.47%, 18.65% 52.38%); background: #e6d800; transition-delay: 235ms !important; }
+.p11 { -webkit-clip-path: polygon(18.65% 48.67%, 12.39% 49.47%, 18.65% 52.38%); background: #b3a800; -webkit-transition-delay: 38ms !important; transition-delay: 38ms !important; }
 
-.p12 { -webkit-clip-path: polygon(12.39% 49.47%, 12.39% 52.98%, 18.65% 52.38%); background: #999000; transition-delay: 363ms !important; }
+.p12 { -webkit-clip-path: polygon(12.39% 49.47%, 12.39% 52.98%, 18.65% 52.38%); background: #999000; -webkit-transition-delay: 434ms !important; transition-delay: 434ms !important; }
 
-.p13 { -webkit-clip-path: polygon(19.18% 40.15%, 12.39% 41.98%, 18.65% 43.68%); background: #FFF000; transition-delay: 348ms !important; }
+.p13 { -webkit-clip-path: polygon(19.18% 40.15%, 12.39% 41.98%, 18.65% 43.68%); background: #4d4800; -webkit-transition-delay: 377ms !important; transition-delay: 377ms !important; }
 
-.p14 { -webkit-clip-path: polygon(12.39% 52.98%, 18.65% 55.92%, 18.65% 52.38%); background: #FFF000; transition-delay: 102ms !important; }
+.p14 { -webkit-clip-path: polygon(12.39% 52.98%, 18.65% 55.92%, 18.65% 52.38%); background: #666000; -webkit-transition-delay: 490ms !important; transition-delay: 490ms !important; }
 
-.p15 { -webkit-clip-path: polygon(12.39% 41.98%, 12.39% 43.73%, 18.65% 43.68%); background: #666000; transition-delay: 85ms !important; }
+.p15 { -webkit-clip-path: polygon(12.39% 41.98%, 12.39% 43.73%, 18.65% 43.68%); background: #b3a800; -webkit-transition-delay: 166ms !important; transition-delay: 166ms !important; }
 
-.p16 { -webkit-clip-path: polygon(18.65% 43.68%, 12.39% 43.73%, 18.65% 48.67%); background: #b3a800; transition-delay: 454ms !important; }
+.p16 { -webkit-clip-path: polygon(18.65% 43.68%, 12.39% 43.73%, 18.65% 48.67%); background: #4d4800; -webkit-transition-delay: 243ms !important; transition-delay: 243ms !important; }
 
-.p17 { -webkit-clip-path: polygon(13.43% 36.12%, 12.39% 41.98%, 19.18% 40.15%); background: #e6d800; transition-delay: 107ms !important; }
+.p17 { -webkit-clip-path: polygon(13.43% 36.12%, 12.39% 41.98%, 19.18% 40.15%); background: #999000; -webkit-transition-delay: 454ms !important; transition-delay: 454ms !important; }
 
-.p18 { -webkit-clip-path: polygon(29.69% 70.08%, 24.49% 63.52%, 24.39% 71.18%); background: #ccc000; transition-delay: 490ms !important; }
+.p18 { -webkit-clip-path: polygon(29.69% 70.08%, 24.49% 63.52%, 24.39% 71.18%); background: #666000; -webkit-transition-delay: 380ms !important; transition-delay: 380ms !important; }
 
-.p19 { -webkit-clip-path: polygon(27.7% 62.9%, 24.49% 63.52%, 29.69% 70.08%); background: #FFF000; transition-delay: 194ms !important; }
+.p19 { -webkit-clip-path: polygon(27.7% 62.9%, 24.49% 63.52%, 29.69% 70.08%); background: #666000; -webkit-transition-delay: 294ms !important; transition-delay: 294ms !important; }
 
-.p20 { -webkit-clip-path: polygon(22.41% 63.08%, 20.54% 61.75%, 20.01% 70.33%); background: #ccc000; transition-delay: 351ms !important; }
+.p20 { -webkit-clip-path: polygon(22.41% 63.08%, 20.54% 61.75%, 20.01% 70.33%); background: #4d4800; -webkit-transition-delay: 25ms !important; transition-delay: 25ms !important; }
 
-.p21 { -webkit-clip-path: polygon(24.49% 63.52%, 22.41% 63.08%, 24.39% 71.18%); background: #807800; transition-delay: 319ms !important; }
+.p21 { -webkit-clip-path: polygon(24.49% 63.52%, 22.41% 63.08%, 24.39% 71.18%); background: #999000; -webkit-transition-delay: 325ms !important; transition-delay: 325ms !important; }
 
-.p22 { -webkit-clip-path: polygon(30.96% 60.6%, 27.7% 62.9%, 32.56% 64.07%); background: #FFF000; transition-delay: 127ms !important; }
+.p22 { -webkit-clip-path: polygon(30.96% 60.6%, 27.7% 62.9%, 32.56% 64.07%); background: #ccc000; -webkit-transition-delay: 102ms !important; transition-delay: 102ms !important; }
 
-.p23 { -webkit-clip-path: polygon(33.93% 67.05%, 27.7% 62.9%, 29.69% 70.08%); background: #e6d800; transition-delay: 398ms !important; }
+.p23 { -webkit-clip-path: polygon(33.93% 67.05%, 27.7% 62.9%, 29.69% 70.08%); background: #999000; -webkit-transition-delay: 437ms !important; transition-delay: 437ms !important; }
 
-.p24 { -webkit-clip-path: polygon(32.56% 64.07%, 27.7% 62.9%, 33.93% 67.05%); background: #4d4800; transition-delay: 239ms !important; }
+.p24 { -webkit-clip-path: polygon(32.56% 64.07%, 27.7% 62.9%, 33.93% 67.05%); background: #4d4800; -webkit-transition-delay: 366ms !important; transition-delay: 366ms !important; }
 
-.p25 { -webkit-clip-path: polygon(20.01% 70.33%, 20.54% 61.75%, 16.18% 67.8%); background: #807800; transition-delay: 303ms !important; }
+.p25 { -webkit-clip-path: polygon(20.01% 70.33%, 20.54% 61.75%, 16.18% 67.8%); background: #b3a800; -webkit-transition-delay: 260ms !important; transition-delay: 260ms !important; }
 
-.p26 { -webkit-clip-path: polygon(19.18% 59.42%, 18.65% 55.92%, 12.39% 57.68%); background: #e6d800; transition-delay: 380ms !important; }
+.p26 { -webkit-clip-path: polygon(19.18% 59.42%, 18.65% 55.92%, 12.39% 57.68%); background: #ccc000; -webkit-transition-delay: 482ms !important; transition-delay: 482ms !important; }
 
-.p27 { -webkit-clip-path: polygon(12.39% 57.68%, 18.65% 55.92%, 12.39% 52.98%); background: #666000; transition-delay: 190ms !important; }
+.p27 { -webkit-clip-path: polygon(12.39% 57.68%, 18.65% 55.92%, 12.39% 52.98%); background: #FFF000; -webkit-transition-delay: 346ms !important; transition-delay: 346ms !important; }
 
-.p28 { -webkit-clip-path: polygon(33.93% 32.55%, 29.58% 29.45%, 32.31% 36.02%); background: #999000; transition-delay: 104ms !important; }
+.p28 { -webkit-clip-path: polygon(33.93% 32.55%, 29.58% 29.45%, 32.31% 36.02%); background: #b3a800; -webkit-transition-delay: 177ms !important; transition-delay: 177ms !important; }
 
-.p29 { -webkit-clip-path: polygon(20.54% 61.75%, 19.18% 59.42%, 16.18% 67.8%); background: #666000; transition-delay: 388ms !important; }
+.p29 { -webkit-clip-path: polygon(20.54% 61.75%, 19.18% 59.42%, 16.18% 67.8%); background: #FFF000; -webkit-transition-delay: 476ms !important; transition-delay: 476ms !important; }
 
-.p30 { -webkit-clip-path: polygon(30.91% 39%, 32.31% 36.02%, 27.78% 36.72%); background: #FFF000; transition-delay: 483ms !important; }
+.p30 { -webkit-clip-path: polygon(30.91% 39%, 32.31% 36.02%, 27.78% 36.72%); background: #999000; -webkit-transition-delay: 481ms !important; transition-delay: 481ms !important; }
 
-.p31 { -webkit-clip-path: polygon(16.18% 67.8%, 19.18% 59.42%, 13.44% 63.6%); background: #b3a800; transition-delay: 158ms !important; }
+.p31 { -webkit-clip-path: polygon(16.18% 67.8%, 19.18% 59.42%, 13.44% 63.6%); background: #ccc000; -webkit-transition-delay: 66ms !important; transition-delay: 66ms !important; }
 
-.p32 { -webkit-clip-path: polygon(13.44% 63.6%, 19.18% 59.42%, 12.39% 57.68%); background: #999000; transition-delay: 180ms !important; }
+.p32 { -webkit-clip-path: polygon(13.44% 63.6%, 19.18% 59.42%, 12.39% 57.68%); background: #e6d800; -webkit-transition-delay: 165ms !important; transition-delay: 165ms !important; }
 
-.p33 { -webkit-clip-path: polygon(24.39% 71.18%, 22.41% 63.08%, 20.01% 70.33%); background: #999000; transition-delay: 70ms !important; }
+.p33 { -webkit-clip-path: polygon(24.39% 71.18%, 22.41% 63.08%, 20.01% 70.33%); background: #999000; -webkit-transition-delay: 34ms !important; transition-delay: 34ms !important; }
 
-.p34 { -webkit-clip-path: polygon(53% 36.27%, 54.33% 28.83%, 49.13% 35.6%); background: #ccc000; transition-delay: 354ms !important; }
+.p34 { -webkit-clip-path: polygon(53% 36.27%, 54.33% 28.83%, 49.13% 35.6%); background: #807800; -webkit-transition-delay: 56ms !important; transition-delay: 56ms !important; }
 
-.p35 { -webkit-clip-path: polygon(59.89% 32%, 54.33% 28.83%, 53% 36.27%); background: #e6d800; transition-delay: 27ms !important; }
+.p35 { -webkit-clip-path: polygon(59.89% 32%, 54.33% 28.83%, 53% 36.27%); background: #b3a800; -webkit-transition-delay: 268ms !important; transition-delay: 268ms !important; }
 
-.p36 { -webkit-clip-path: polygon(54.33% 28.83%, 48.58% 28.12%, 49.13% 35.6%); background: #e6d800; transition-delay: 288ms !important; }
+.p36 { -webkit-clip-path: polygon(54.33% 28.83%, 48.58% 28.12%, 49.13% 35.6%); background: #b3a800; -webkit-transition-delay: 302ms !important; transition-delay: 302ms !important; }
 
-.p37 { -webkit-clip-path: polygon(54.46% 58.72%, 61.13% 58.65%, 53.94% 56.4%); background: #ccc000; transition-delay: 359ms !important; }
+.p37 { -webkit-clip-path: polygon(54.46% 58.72%, 61.13% 58.65%, 53.94% 56.4%); background: #666000; -webkit-transition-delay: 16ms !important; transition-delay: 16ms !important; }
 
-.p38 { -webkit-clip-path: polygon(57.15% 38.7%, 59.89% 32%, 53% 36.27%); background: #FFF000; transition-delay: 461ms !important; }
+.p38 { -webkit-clip-path: polygon(57.15% 38.7%, 59.89% 32%, 53% 36.27%); background: #b3a800; -webkit-transition-delay: 425ms !important; transition-delay: 425ms !important; }
 
-.p39 { -webkit-clip-path: polygon(60.21% 64.03%, 61.13% 58.65%, 54.46% 58.72%); background: #b3a800; transition-delay: 433ms !important; }
+.p39 { -webkit-clip-path: polygon(60.21% 64.03%, 61.13% 58.65%, 54.46% 58.72%); background: #b3a800; -webkit-transition-delay: 78ms !important; transition-delay: 78ms !important; }
 
-.p40 { -webkit-clip-path: polygon(45.73% 36.78%, 40.83% 31.67%, 44.59% 38.3%); background: #807800; transition-delay: 124ms !important; }
+.p40 { -webkit-clip-path: polygon(45.73% 36.78%, 40.83% 31.67%, 44.59% 38.3%); background: #ccc000; -webkit-transition-delay: 459ms !important; transition-delay: 459ms !important; }
 
-.p41 { -webkit-clip-path: polygon(40.83% 31.67%, 38.66% 35.65%, 44.59% 38.3%); background: #4d4800; transition-delay: 213ms !important; }
+.p41 { -webkit-clip-path: polygon(40.83% 31.67%, 38.66% 35.65%, 44.59% 38.3%); background: #4d4800; -webkit-transition-delay: 72ms !important; transition-delay: 72ms !important; }
 
-.p42 { -webkit-clip-path: polygon(49.13% 35.6%, 44.18% 29.05%, 47.33% 35.9%); background: #999000; transition-delay: 321ms !important; }
+.p42 { -webkit-clip-path: polygon(49.13% 35.6%, 44.18% 29.05%, 47.33% 35.9%); background: #ccc000; -webkit-transition-delay: 146ms !important; transition-delay: 146ms !important; }
 
-.p43 { -webkit-clip-path: polygon(47.33% 35.9%, 44.18% 29.05%, 45.73% 36.78%); background: #666000; transition-delay: 331ms !important; }
+.p43 { -webkit-clip-path: polygon(47.33% 35.9%, 44.18% 29.05%, 45.73% 36.78%); background: #4d4800; -webkit-transition-delay: 330ms !important; transition-delay: 330ms !important; }
 
-.p44 { -webkit-clip-path: polygon(44.59% 38.3%, 38.66% 35.65%, 44.15% 40.52%); background: #4d4800; transition-delay: 342ms !important; }
+.p44 { -webkit-clip-path: polygon(44.59% 38.3%, 38.66% 35.65%, 44.15% 40.52%); background: #FFF000; -webkit-transition-delay: 335ms !important; transition-delay: 335ms !important; }
 
-.p45 { -webkit-clip-path: polygon(48.58% 28.12%, 44.18% 29.05%, 49.13% 35.6%); background: #e6d800; transition-delay: 341ms !important; }
+.p45 { -webkit-clip-path: polygon(48.58% 28.12%, 44.18% 29.05%, 49.13% 35.6%); background: #e6d800; -webkit-transition-delay: 391ms !important; transition-delay: 391ms !important; }
 
-.p46 { -webkit-clip-path: polygon(44.59% 62.45%, 42.69% 69.78%, 48.99% 63.58%); background: #e6d800; transition-delay: 426ms !important; }
+.p46 { -webkit-clip-path: polygon(44.59% 62.45%, 42.69% 69.78%, 48.99% 63.58%); background: #666000; -webkit-transition-delay: 195ms !important; transition-delay: 195ms !important; }
 
-.p47 { -webkit-clip-path: polygon(42.69% 69.78%, 49.13% 71.07%, 48.99% 63.58%); background: #807800; transition-delay: 389ms !important; }
+.p47 { -webkit-clip-path: polygon(42.69% 69.78%, 49.13% 71.07%, 48.99% 63.58%); background: #b3a800; -webkit-transition-delay: 375ms !important; transition-delay: 375ms !important; }
 
-.p48 { -webkit-clip-path: polygon(36.8% 65.28%, 42.69% 69.78%, 44.59% 62.45%); background: #FFF000; transition-delay: 265ms !important; }
+.p48 { -webkit-clip-path: polygon(36.8% 65.28%, 42.69% 69.78%, 44.59% 62.45%); background: #4d4800; -webkit-transition-delay: 84ms !important; transition-delay: 84ms !important; }
 
-.p49 { -webkit-clip-path: polygon(40.31% 59.2%, 36.8% 65.28%, 44.59% 62.45%); background: #b3a800; transition-delay: 152ms !important; }
+.p49 { -webkit-clip-path: polygon(40.31% 59.2%, 36.8% 65.28%, 44.59% 62.45%); background: #999000; -webkit-transition-delay: 404ms !important; transition-delay: 404ms !important; }
 
-.p50 { -webkit-clip-path: polygon(48.99% 63.58%, 49.13% 71.07%, 51.54% 63.18%); background: #e6d800; transition-delay: 470ms !important; }
+.p50 { -webkit-clip-path: polygon(48.99% 63.58%, 49.13% 71.07%, 51.54% 63.18%); background: #e6d800; -webkit-transition-delay: 385ms !important; transition-delay: 385ms !important; }
 
-.p51 { -webkit-clip-path: polygon(53.86% 70.27%, 57.68% 67.93%, 53.23% 62.08%); background: #807800; transition-delay: 421ms !important; }
+.p51 { -webkit-clip-path: polygon(53.86% 70.27%, 57.68% 67.93%, 53.23% 62.08%); background: #807800; -webkit-transition-delay: 270ms !important; transition-delay: 270ms !important; }
 
-.p52 { -webkit-clip-path: polygon(53.23% 62.08%, 57.68% 67.93%, 54.16% 60.5%); background: #666000; transition-delay: 120ms !important; }
+.p52 { -webkit-clip-path: polygon(53.23% 62.08%, 57.68% 67.93%, 54.16% 60.5%); background: #807800; -webkit-transition-delay: 432ms !important; transition-delay: 432ms !important; }
 
-.p53 { -webkit-clip-path: polygon(57.68% 67.93%, 60.21% 64.03%, 54.16% 60.5%); background: #4d4800; transition-delay: 214ms !important; }
+.p53 { -webkit-clip-path: polygon(57.68% 67.93%, 60.21% 64.03%, 54.16% 60.5%); background: #b3a800; -webkit-transition-delay: 25ms !important; transition-delay: 25ms !important; }
 
-.p54 { -webkit-clip-path: polygon(49.13% 71.07%, 53.86% 70.27%, 51.54% 63.18%); background: #FFF000; transition-delay: 447ms !important; }
+.p54 { -webkit-clip-path: polygon(49.13% 71.07%, 53.86% 70.27%, 51.54% 63.18%); background: #e6d800; -webkit-transition-delay: 91ms !important; transition-delay: 91ms !important; }
 
-.p55 { -webkit-clip-path: polygon(54.16% 60.5%, 60.21% 64.03%, 54.46% 58.72%); background: #999000; transition-delay: 68ms !important; }
+.p55 { -webkit-clip-path: polygon(54.16% 60.5%, 60.21% 64.03%, 54.46% 58.72%); background: #999000; -webkit-transition-delay: 271ms !important; transition-delay: 271ms !important; }
 
-.p56 { -webkit-clip-path: polygon(51.54% 63.18%, 53.86% 70.27%, 53.23% 62.08%); background: #b3a800; transition-delay: 99ms !important; }
+.p56 { -webkit-clip-path: polygon(51.54% 63.18%, 53.86% 70.27%, 53.23% 62.08%); background: #b3a800; -webkit-transition-delay: 47ms !important; transition-delay: 47ms !important; }
 
-.p57 { -webkit-clip-path: polygon(44.18% 29.05%, 40.83% 31.67%, 45.73% 36.78%); background: #b3a800; transition-delay: 193ms !important; }
+.p57 { -webkit-clip-path: polygon(44.18% 29.05%, 40.83% 31.67%, 45.73% 36.78%); background: #e6d800; -webkit-transition-delay: 25ms !important; transition-delay: 25ms !important; }
 
-.p58 { -webkit-clip-path: polygon(52.43% 54.85%, 53.94% 56.4%, 55.19% 47.93%); background: #4d4800; transition-delay: 288ms !important; }
+.p58 { -webkit-clip-path: polygon(52.43% 54.85%, 53.94% 56.4%, 55.19% 47.93%); background: #4d4800; -webkit-transition-delay: 338ms !important; transition-delay: 338ms !important; }
 
-.p59 { -webkit-clip-path: polygon(50.1% 53.68%, 52.43% 54.85%, 55.19% 47.93%); background: #999000; transition-delay: 105ms !important; }
+.p59 { -webkit-clip-path: polygon(50.1% 53.68%, 52.43% 54.85%, 55.19% 47.93%); background: #666000; -webkit-transition-delay: 458ms !important; transition-delay: 458ms !important; }
 
-.p60 { -webkit-clip-path: polygon(51.19% 46.3%, 50.1% 53.68%, 55.19% 47.93%); background: #ccc000; transition-delay: 106ms !important; }
+.p60 { -webkit-clip-path: polygon(51.19% 46.3%, 50.1% 53.68%, 55.19% 47.93%); background: #b3a800; -webkit-transition-delay: 415ms !important; transition-delay: 415ms !important; }
 
-.p61 { -webkit-clip-path: polygon(47.11% 52.57%, 50.1% 53.68%, 51.19% 46.3%); background: #ccc000; transition-delay: 17ms !important; }
+.p61 { -webkit-clip-path: polygon(47.11% 52.57%, 50.1% 53.68%, 51.19% 46.3%); background: #4d4800; -webkit-transition-delay: 295ms !important; transition-delay: 295ms !important; }
 
-.p62 { -webkit-clip-path: polygon(48.24% 45.33%, 47.11% 52.57%, 51.19% 46.3%); background: #999000; transition-delay: 181ms !important; }
+.p62 { -webkit-clip-path: polygon(48.24% 45.33%, 47.11% 52.57%, 51.19% 46.3%); background: #ccc000; -webkit-transition-delay: 150ms !important; transition-delay: 150ms !important; }
 
-.p63 { -webkit-clip-path: polygon(38.66% 35.65%, 37.9% 40.7%, 44.15% 40.52%); background: #e6d800; transition-delay: 37ms !important; }
+.p63 { -webkit-clip-path: polygon(38.66% 35.65%, 37.9% 40.7%, 44.15% 40.52%); background: #999000; -webkit-transition-delay: 477ms !important; transition-delay: 477ms !important; }
 
-.p64 { -webkit-clip-path: polygon(58.65% 50.73%, 53.94% 56.4%, 60.5% 54.2%); background: #807800; transition-delay: 292ms !important; }
+.p64 { -webkit-clip-path: polygon(58.65% 50.73%, 53.94% 56.4%, 60.5% 54.2%); background: #e6d800; -webkit-transition-delay: 239ms !important; transition-delay: 239ms !important; }
 
-.p65 { -webkit-clip-path: polygon(55.19% 47.93%, 53.94% 56.4%, 58.65% 50.73%); background: #666000; transition-delay: 457ms !important; }
+.p65 { -webkit-clip-path: polygon(55.19% 47.93%, 53.94% 56.4%, 58.65% 50.73%); background: #e6d800; -webkit-transition-delay: 60ms !important; transition-delay: 60ms !important; }
 
-.p66 { -webkit-clip-path: polygon(53.94% 56.4%, 61.13% 58.65%, 60.5% 54.2%); background: #666000; transition-delay: 400ms !important; }
+.p66 { -webkit-clip-path: polygon(53.94% 56.4%, 61.13% 58.65%, 60.5% 54.2%); background: #4d4800; -webkit-transition-delay: 409ms !important; transition-delay: 409ms !important; }
 
-.p67 { -webkit-clip-path: polygon(44.15% 40.52%, 38.65% 45.48%, 44.63% 42.68%); background: #4d4800; transition-delay: 487ms !important; }
+.p67 { -webkit-clip-path: polygon(44.15% 40.52%, 38.65% 45.48%, 44.63% 42.68%); background: #FFF000; -webkit-transition-delay: 160ms !important; transition-delay: 160ms !important; }
 
-.p68 { -webkit-clip-path: polygon(38.65% 45.48%, 40.68% 48.82%, 44.63% 42.68%); background: #4d4800; transition-delay: 44ms !important; }
+.p68 { -webkit-clip-path: polygon(38.65% 45.48%, 40.68% 48.82%, 44.63% 42.68%); background: #666000; -webkit-transition-delay: 44ms !important; transition-delay: 44ms !important; }
 
-.p69 { -webkit-clip-path: polygon(37.9% 40.7%, 38.65% 45.48%, 44.15% 40.52%); background: #807800; transition-delay: 279ms !important; }
+.p69 { -webkit-clip-path: polygon(37.9% 40.7%, 38.65% 45.48%, 44.15% 40.52%); background: #b3a800; -webkit-transition-delay: 163ms !important; transition-delay: 163ms !important; }
 
-.p70 { -webkit-clip-path: polygon(43.63% 51.08%, 47.11% 52.57%, 48.24% 45.33%); background: #b3a800; transition-delay: 340ms !important; }
+.p70 { -webkit-clip-path: polygon(43.63% 51.08%, 47.11% 52.57%, 48.24% 45.33%); background: #999000; -webkit-transition-delay: 399ms !important; transition-delay: 399ms !important; }
 
-.p71 { -webkit-clip-path: polygon(40.68% 48.82%, 43.63% 51.08%, 46.03% 44.2%); background: #b3a800; transition-delay: 352ms !important; }
+.p71 { -webkit-clip-path: polygon(40.68% 48.82%, 43.63% 51.08%, 46.03% 44.2%); background: #807800; -webkit-transition-delay: 231ms !important; transition-delay: 231ms !important; }
 
-.p72 { -webkit-clip-path: polygon(46.03% 44.2%, 43.63% 51.08%, 48.24% 45.33%); background: #e6d800; transition-delay: 137ms !important; }
+.p72 { -webkit-clip-path: polygon(46.03% 44.2%, 43.63% 51.08%, 48.24% 45.33%); background: #ccc000; -webkit-transition-delay: 462ms !important; transition-delay: 462ms !important; }
 
-.p73 { -webkit-clip-path: polygon(44.63% 42.68%, 40.68% 48.82%, 46.03% 44.2%); background: #b3a800; transition-delay: 439ms !important; }
+.p73 { -webkit-clip-path: polygon(44.63% 42.68%, 40.68% 48.82%, 46.03% 44.2%); background: #e6d800; -webkit-transition-delay: 254ms !important; transition-delay: 254ms !important; }
 
-.p74 { -webkit-clip-path: polygon(71.96% 42.68%, 68.01% 48.82%, 73.35% 44.2%); background: #807800; transition-delay: 339ms !important; }
+.p74 { -webkit-clip-path: polygon(71.96% 42.68%, 68.01% 48.82%, 73.35% 44.2%); background: #b3a800; -webkit-transition-delay: 160ms !important; transition-delay: 160ms !important; }
 
-.p75 { -webkit-clip-path: polygon(70.95% 51.08%, 74.44% 52.57%, 73.35% 44.2%); background: #b3a800; transition-delay: 173ms !important; }
+.p75 { -webkit-clip-path: polygon(70.95% 51.08%, 74.44% 52.57%, 73.35% 44.2%); background: #666000; -webkit-transition-delay: 148ms !important; transition-delay: 148ms !important; }
 
-.p76 { -webkit-clip-path: polygon(68.01% 48.82%, 70.95% 51.08%, 73.35% 44.2%); background: #4d4800; transition-delay: 261ms !important; }
+.p76 { -webkit-clip-path: polygon(68.01% 48.82%, 70.95% 51.08%, 73.35% 44.2%); background: #4d4800; -webkit-transition-delay: 127ms !important; transition-delay: 127ms !important; }
 
-.p77 { -webkit-clip-path: polygon(73.35% 44.2%, 74.44% 52.57%, 75.58% 45.33%); background: #FFF000; transition-delay: 380ms !important; }
+.p77 { -webkit-clip-path: polygon(73.35% 44.2%, 74.44% 52.57%, 75.58% 45.33%); background: #e6d800; -webkit-transition-delay: 451ms !important; transition-delay: 451ms !important; }
 
-.p78 { -webkit-clip-path: polygon(66% 35.65%, 65.23% 40.7%, 71.91% 38.3%); background: #4d4800; transition-delay: 31ms !important; }
+.p78 { -webkit-clip-path: polygon(66% 35.65%, 65.23% 40.7%, 71.91% 38.3%); background: #666000; -webkit-transition-delay: 45ms !important; transition-delay: 45ms !important; }
 
-.p79 { -webkit-clip-path: polygon(74.44% 52.57%, 77.44% 53.68%, 75.58% 45.33%); background: #b3a800; transition-delay: 17ms !important; }
+.p79 { -webkit-clip-path: polygon(74.44% 52.57%, 77.44% 53.68%, 75.58% 45.33%); background: #b3a800; -webkit-transition-delay: 137ms !important; transition-delay: 137ms !important; }
 
-.p80 { -webkit-clip-path: polygon(65.98% 45.48%, 68.01% 48.82%, 71.96% 42.68%); background: #b3a800; transition-delay: 97ms !important; }
+.p80 { -webkit-clip-path: polygon(65.98% 45.48%, 68.01% 48.82%, 71.96% 42.68%); background: #4d4800; -webkit-transition-delay: 461ms !important; transition-delay: 461ms !important; }
 
-.p81 { -webkit-clip-path: polygon(68.15% 31.67%, 66% 35.65%, 71.91% 38.3%); background: #b3a800; transition-delay: 437ms !important; }
+.p81 { -webkit-clip-path: polygon(68.15% 31.67%, 66% 35.65%, 71.91% 38.3%); background: #ccc000; -webkit-transition-delay: 272ms !important; transition-delay: 272ms !important; }
 
-.p82 { -webkit-clip-path: polygon(65.23% 40.7%, 65.98% 45.48%, 71.48% 40.52%); background: #666000; transition-delay: 148ms !important; }
+.p82 { -webkit-clip-path: polygon(65.23% 40.7%, 65.98% 45.48%, 71.48% 40.52%); background: #ccc000; -webkit-transition-delay: 336ms !important; transition-delay: 336ms !important; }
 
-.p83 { -webkit-clip-path: polygon(71.48% 40.52%, 65.98% 45.48%, 71.96% 42.68%); background: #ccc000; transition-delay: 399ms !important; }
+.p83 { -webkit-clip-path: polygon(71.48% 40.52%, 65.98% 45.48%, 71.96% 42.68%); background: #ccc000; -webkit-transition-delay: 37ms !important; transition-delay: 37ms !important; }
 
-.p84 { -webkit-clip-path: polygon(71.91% 38.3%, 65.23% 40.7%, 71.48% 40.52%); background: #b3a800; transition-delay: 406ms !important; }
+.p84 { -webkit-clip-path: polygon(71.91% 38.3%, 65.23% 40.7%, 71.48% 40.52%); background: #807800; -webkit-transition-delay: 287ms !important; transition-delay: 287ms !important; }
 
-.p85 { -webkit-clip-path: polygon(75.58% 45.33%, 77.44% 53.68%, 78.53% 46.3%); background: #e6d800; transition-delay: 168ms !important; }
+.p85 { -webkit-clip-path: polygon(75.58% 45.33%, 77.44% 53.68%, 78.53% 46.3%); background: #b3a800; -webkit-transition-delay: 153ms !important; transition-delay: 153ms !important; }
 
-.p86 { -webkit-clip-path: polygon(81.26% 56.4%, 81.79% 58.72%, 87.84% 54.2%); background: #999000; transition-delay: 112ms !important; }
+.p86 { -webkit-clip-path: polygon(81.26% 56.4%, 81.79% 58.72%, 87.84% 54.2%); background: #999000; -webkit-transition-delay: 464ms !important; transition-delay: 464ms !important; }
 
-.p87 { -webkit-clip-path: polygon(85.98% 50.73%, 81.26% 56.4%, 87.84% 54.2%); background: #807800; transition-delay: 96ms !important; }
+.p87 { -webkit-clip-path: polygon(85.98% 50.73%, 81.26% 56.4%, 87.84% 54.2%); background: #807800; -webkit-transition-delay: 353ms !important; transition-delay: 353ms !important; }
 
-.p88 { -webkit-clip-path: polygon(81.79% 58.72%, 87.54% 64.03%, 88.45% 58.65%); background: #b3a800; transition-delay: 293ms !important; }
+.p88 { -webkit-clip-path: polygon(81.79% 58.72%, 87.54% 64.03%, 88.45% 58.65%); background: #b3a800; -webkit-transition-delay: 119ms !important; transition-delay: 119ms !important; }
 
-.p89 { -webkit-clip-path: polygon(87.84% 54.2%, 81.79% 58.72%, 88.45% 58.65%); background: #4d4800; transition-delay: 80ms !important; }
+.p89 { -webkit-clip-path: polygon(87.84% 54.2%, 81.79% 58.72%, 88.45% 58.65%); background: #4d4800; -webkit-transition-delay: 259ms !important; transition-delay: 259ms !important; }
 
-.p90 { -webkit-clip-path: polygon(78.53% 46.3%, 79.76% 54.85%, 82.53% 47.93%); background: #999000; transition-delay: 230ms !important; }
+.p90 { -webkit-clip-path: polygon(78.53% 46.3%, 79.76% 54.85%, 82.53% 47.93%); background: #b3a800; -webkit-transition-delay: 176ms !important; transition-delay: 176ms !important; }
 
-.p91 { -webkit-clip-path: polygon(77.44% 53.68%, 79.76% 54.85%, 78.53% 46.3%); background: #666000; transition-delay: 220ms !important; }
+.p91 { -webkit-clip-path: polygon(77.44% 53.68%, 79.76% 54.85%, 78.53% 46.3%); background: #FFF000; -webkit-transition-delay: 432ms !important; transition-delay: 432ms !important; }
 
-.p92 { -webkit-clip-path: polygon(79.76% 54.85%, 81.26% 56.4%, 85.98% 50.73%); background: #ccc000; transition-delay: 198ms !important; }
+.p92 { -webkit-clip-path: polygon(79.76% 54.85%, 81.26% 56.4%, 85.98% 50.73%); background: #FFF000; -webkit-transition-delay: 293ms !important; transition-delay: 293ms !important; }
 
-.p93 { -webkit-clip-path: polygon(82.53% 47.93%, 79.76% 54.85%, 85.98% 50.73%); background: #b3a800; transition-delay: 282ms !important; }
+.p93 { -webkit-clip-path: polygon(82.53% 47.93%, 79.76% 54.85%, 85.98% 50.73%); background: #666000; -webkit-transition-delay: 215ms !important; transition-delay: 215ms !important; }
 
-.p94 { -webkit-clip-path: polygon(80.56% 62.08%, 85% 67.93%, 81.49% 60.5%); background: #e6d800; transition-delay: 310ms !important; }
+.p94 { -webkit-clip-path: polygon(80.56% 62.08%, 85% 67.93%, 81.49% 60.5%); background: #666000; -webkit-transition-delay: 264ms !important; transition-delay: 264ms !important; }
 
-.p95 { -webkit-clip-path: polygon(73.05% 36.78%, 68.15% 31.67%, 71.91% 38.3%); background: #b3a800; transition-delay: 492ms !important; }
+.p95 { -webkit-clip-path: polygon(73.05% 36.78%, 68.15% 31.67%, 71.91% 38.3%); background: #4d4800; -webkit-transition-delay: 65ms !important; transition-delay: 65ms !important; }
 
-.p96 { -webkit-clip-path: polygon(76.45% 71.07%, 81.2% 70.27%, 78.88% 63.18%); background: #4d4800; transition-delay: 399ms !important; }
+.p96 { -webkit-clip-path: polygon(76.45% 71.07%, 81.2% 70.27%, 78.88% 63.18%); background: #b3a800; -webkit-transition-delay: 125ms !important; transition-delay: 125ms !important; }
 
-.p97 { -webkit-clip-path: polygon(81.2% 70.27%, 85% 67.93%, 80.56% 62.08%); background: #807800; transition-delay: 78ms !important; }
+.p97 { -webkit-clip-path: polygon(81.2% 70.27%, 85% 67.93%, 80.56% 62.08%); background: #b3a800; -webkit-transition-delay: 290ms !important; transition-delay: 290ms !important; }
 
-.p98 { -webkit-clip-path: polygon(70.01% 69.78%, 76.45% 71.07%, 76.31% 63.58%); background: #807800; transition-delay: 399ms !important; }
+.p98 { -webkit-clip-path: polygon(70.01% 69.78%, 76.45% 71.07%, 76.31% 63.58%); background: #FFF000; -webkit-transition-delay: 335ms !important; transition-delay: 335ms !important; }
 
-.p99 { -webkit-clip-path: polygon(64.14% 65.28%, 70.01% 69.78%, 71.91% 62.45%); background: #b3a800; transition-delay: 154ms !important; }
+.p99 { -webkit-clip-path: polygon(64.14% 65.28%, 70.01% 69.78%, 71.91% 62.45%); background: #b3a800; -webkit-transition-delay: 56ms !important; transition-delay: 56ms !important; }
 
-.p100 { -webkit-clip-path: polygon(78.88% 63.18%, 81.2% 70.27%, 80.56% 62.08%); background: #666000; transition-delay: 364ms !important; }
+.p100 { -webkit-clip-path: polygon(78.88% 63.18%, 81.2% 70.27%, 80.56% 62.08%); background: #FFF000; -webkit-transition-delay: 231ms !important; transition-delay: 231ms !important; }
 
-.p101 { -webkit-clip-path: polygon(67.65% 59.2%, 64.14% 65.28%, 71.91% 62.45%); background: #ccc000; transition-delay: 147ms !important; }
+.p101 { -webkit-clip-path: polygon(67.65% 59.2%, 64.14% 65.28%, 71.91% 62.45%); background: #999000; -webkit-transition-delay: 29ms !important; transition-delay: 29ms !important; }
 
-.p102 { -webkit-clip-path: polygon(85% 67.93%, 87.54% 64.03%, 81.49% 60.5%); background: #ccc000; transition-delay: 133ms !important; }
+.p102 { -webkit-clip-path: polygon(85% 67.93%, 87.54% 64.03%, 81.49% 60.5%); background: #e6d800; -webkit-transition-delay: 417ms !important; transition-delay: 417ms !important; }
 
-.p103 { -webkit-clip-path: polygon(71.91% 62.45%, 70.01% 69.78%, 76.31% 63.58%); background: #666000; transition-delay: 194ms !important; }
+.p103 { -webkit-clip-path: polygon(71.91% 62.45%, 70.01% 69.78%, 76.31% 63.58%); background: #666000; -webkit-transition-delay: 447ms !important; transition-delay: 447ms !important; }
 
-.p104 { -webkit-clip-path: polygon(76.31% 63.58%, 76.45% 71.07%, 78.88% 63.18%); background: #b3a800; transition-delay: 36ms !important; }
+.p104 { -webkit-clip-path: polygon(76.31% 63.58%, 76.45% 71.07%, 78.88% 63.18%); background: #807800; -webkit-transition-delay: 329ms !important; transition-delay: 329ms !important; }
 
-.p105 { -webkit-clip-path: polygon(75.9% 28.12%, 71.51% 29.05%, 74.65% 35.9%); background: #FFF000; transition-delay: 213ms !important; }
+.p105 { -webkit-clip-path: polygon(75.9% 28.12%, 71.51% 29.05%, 74.65% 35.9%); background: #4d4800; -webkit-transition-delay: 415ms !important; transition-delay: 415ms !important; }
 
-.p106 { -webkit-clip-path: polygon(76.45% 35.6%, 75.9% 28.12%, 74.65% 35.9%); background: #4d4800; transition-delay: 58ms !important; }
+.p106 { -webkit-clip-path: polygon(76.45% 35.6%, 75.9% 28.12%, 74.65% 35.9%); background: #b3a800; -webkit-transition-delay: 305ms !important; transition-delay: 305ms !important; }
 
-.p107 { -webkit-clip-path: polygon(81.49% 60.5%, 87.54% 64.03%, 81.79% 58.72%); background: #ccc000; transition-delay: 199ms !important; }
+.p107 { -webkit-clip-path: polygon(81.49% 60.5%, 87.54% 64.03%, 81.79% 58.72%); background: #999000; -webkit-transition-delay: 418ms !important; transition-delay: 418ms !important; }
 
-.p108 { -webkit-clip-path: polygon(71.51% 29.05%, 68.15% 31.67%, 73.05% 36.78%); background: #807800; transition-delay: 238ms !important; }
+.p108 { -webkit-clip-path: polygon(71.51% 29.05%, 68.15% 31.67%, 73.05% 36.78%); background: #e6d800; -webkit-transition-delay: 303ms !important; transition-delay: 303ms !important; }
 
-.p109 { -webkit-clip-path: polygon(74.65% 35.9%, 71.51% 29.05%, 73.05% 36.78%); background: #666000; transition-delay: 242ms !important; }
+.p109 { -webkit-clip-path: polygon(74.65% 35.9%, 71.51% 29.05%, 73.05% 36.78%); background: #4d4800; -webkit-transition-delay: 331ms !important; transition-delay: 331ms !important; }
 
-.p110 { -webkit-clip-path: polygon(87.21% 32%, 81.65% 28.83%, 80.33% 36.27%); background: #807800; transition-delay: 452ms !important; }
+.p110 { -webkit-clip-path: polygon(87.21% 32%, 81.65% 28.83%, 80.33% 36.27%); background: #FFF000; -webkit-transition-delay: 122ms !important; transition-delay: 122ms !important; }
 
-.p111 { -webkit-clip-path: polygon(84.48% 38.7%, 87.21% 32%, 80.33% 36.27%); background: #ccc000; transition-delay: 363ms !important; }
+.p111 { -webkit-clip-path: polygon(84.48% 38.7%, 87.21% 32%, 80.33% 36.27%); background: #999000; -webkit-transition-delay: 34ms !important; transition-delay: 34ms !important; }
 
-.p112 { -webkit-clip-path: polygon(80.33% 36.27%, 81.65% 28.83%, 76.45% 35.6%); background: #FFF000; transition-delay: 438ms !important; }
+.p112 { -webkit-clip-path: polygon(80.33% 36.27%, 81.65% 28.83%, 76.45% 35.6%); background: #807800; -webkit-transition-delay: 346ms !important; transition-delay: 346ms !important; }
 
-.p113 { -webkit-clip-path: polygon(81.65% 28.83%, 75.9% 28.12%, 76.45% 35.6%); background: #e6d800; transition-delay: 428ms !important; }
+.p113 { -webkit-clip-path: polygon(81.65% 28.83%, 75.9% 28.12%, 76.45% 35.6%); background: #b3a800; -webkit-transition-delay: 144ms !important; transition-delay: 144ms !important; }
 
-.p114 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; transition-delay: 381ms !important; }
+.p114 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 147ms !important; transition-delay: 147ms !important; }
 
-.p115 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; transition-delay: 4ms !important; }
+.p115 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 396ms !important; transition-delay: 396ms !important; }
 
-.p116 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; transition-delay: 411ms !important; }
+.p116 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 43ms !important; transition-delay: 43ms !important; }
 
-.p117 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; transition-delay: 334ms !important; }
+.p117 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 132ms !important; transition-delay: 132ms !important; }
 
-.p118 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; transition-delay: 465ms !important; }
+.p118 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 95ms !important; transition-delay: 95ms !important; }
 
-.p119 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; transition-delay: 108ms !important; }
+.p119 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 500ms !important; transition-delay: 500ms !important; }
 
-.p120 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #ccc000; transition-delay: 22ms !important; }
+.p120 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 57ms !important; transition-delay: 57ms !important; }
 
-.p121 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #ccc000; transition-delay: 31ms !important; }
+.p121 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 53ms !important; transition-delay: 53ms !important; }
 
-.p122 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #ccc000; transition-delay: 296ms !important; }
+.p122 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 109ms !important; transition-delay: 109ms !important; }
 
-.p123 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; transition-delay: 122ms !important; }
+.p123 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 330ms !important; transition-delay: 330ms !important; }
 
-.p124 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; transition-delay: 160ms !important; }
+.p124 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #666000; -webkit-transition-delay: 18ms !important; transition-delay: 18ms !important; }
 
-.p125 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; transition-delay: 227ms !important; }
+.p125 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 219ms !important; transition-delay: 219ms !important; }
 
-.p126 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; transition-delay: 161ms !important; }
+.p126 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; -webkit-transition-delay: 126ms !important; transition-delay: 126ms !important; }
 
-.p127 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; transition-delay: 273ms !important; }
+.p127 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #666000; -webkit-transition-delay: 145ms !important; transition-delay: 145ms !important; }
 
-.p128 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; transition-delay: 150ms !important; }
+.p128 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 207ms !important; transition-delay: 207ms !important; }
 
-.p129 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; transition-delay: 477ms !important; }
+.p129 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 230ms !important; transition-delay: 230ms !important; }
 
-.p130 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; transition-delay: 392ms !important; }
+.p130 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 349ms !important; transition-delay: 349ms !important; }
 
-.p131 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; transition-delay: 328ms !important; }
+.p131 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #666000; -webkit-transition-delay: 80ms !important; transition-delay: 80ms !important; }
 
-.p132 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #ccc000; transition-delay: 49ms !important; }
+.p132 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #4d4800; -webkit-transition-delay: 417ms !important; transition-delay: 417ms !important; }
 
-.p133 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; transition-delay: 264ms !important; }
+.p133 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 8ms !important; transition-delay: 8ms !important; }
 
-.p134 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; transition-delay: 388ms !important; }
+.p134 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 264ms !important; transition-delay: 264ms !important; }
 
-.p135 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #4d4800; transition-delay: 57ms !important; }
+.p135 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; -webkit-transition-delay: 424ms !important; transition-delay: 424ms !important; }
 
-.p136 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; transition-delay: 370ms !important; }
+.p136 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 214ms !important; transition-delay: 214ms !important; }
 
-.p137 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #ccc000; transition-delay: 115ms !important; }
+.p137 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 417ms !important; transition-delay: 417ms !important; }
 
-.p138 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; transition-delay: 37ms !important; }
+.p138 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #ccc000; -webkit-transition-delay: 496ms !important; transition-delay: 496ms !important; }
 
-.p139 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; transition-delay: 22ms !important; }
+.p139 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 20ms !important; transition-delay: 20ms !important; }
 
-.p140 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; transition-delay: 226ms !important; }
+.p140 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #4d4800; -webkit-transition-delay: 6ms !important; transition-delay: 6ms !important; }
 
 .figure1 .p1 { -webkit-clip-path: polygon(14.1% 53.47%, 18.88% 53.47%, 14.1% 45.92%); }
 .figure1 .p2 { -webkit-clip-path: polygon(9.31% 53.47%, 14.1% 53.47%, 9.31% 45.92%); }
