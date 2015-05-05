@@ -1,5 +1,6 @@
 var gulp         = require('gulp'),
     sass         = require('gulp-ruby-sass'),
+    copyjs       = require('gulp-copy'),
     sourcemaps   = require('gulp-sourcemaps'),
     filter       = require('gulp-filter'),
     postcss      = require('gulp-postcss'),
@@ -112,7 +113,7 @@ gulp.task('svgsprite', function() {
             mode: "symbols",
             selector: "icon-%f",
             preview: false,
-            svg: {
+            svg: { 
                 symbols: 'icons.svg'
             }
             // templates: {
@@ -124,6 +125,11 @@ gulp.task('svgsprite', function() {
             // padding: 10
         }))
         .pipe(gulp.dest(dest.img));
+});
+
+gulp.task('copyjs', function() {
+   gulp.src('src/js/*.js')
+   .pipe(gulp.dest('site/js/'));
 });
 
 gulp.task('svgo', function() {
@@ -174,6 +180,7 @@ gulp.task('assets', function () {
 // watch
 gulp.task('watch', function() {
     gulp.watch(src.sass + '/**/*', ['sass']);
+    gulp.watch(src.js + '/*', ['copyjs']);
     gulp.watch(src.jade + '/**/*.jade', ['jade']);
     gulp.watch([src.jade + '/_*.jade', src.jade + '/includes/*.jade'], ['jade-all']);
     gulp.watch(src.svg + '/icons/*.svg', ['svgsprite']);
@@ -181,6 +188,6 @@ gulp.task('watch', function() {
     gulp.watch(src.img + '/icons/*.png', ['sprite']);
 });
 
-gulp.task('build', ['sass', 'svgsprite', 'sprite','assets', 'jade-all'], function() {});
+gulp.task('build', ['sass', 'svgsprite', 'sprite','assets','copyjs', 'jade-all'], function() {});
 
 gulp.task('default', ['browser-sync', 'watch'], function() {});
