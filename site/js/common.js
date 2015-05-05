@@ -8,11 +8,11 @@ head.ready(function() {
 	        i = (i==3)?1:i+1;     
 	    $("body").addClass("figure" + i); 
 	}
-	// setInterval(changeClass, 2000);
+	setInterval(changeClass, 3000);
 	// or click thru them
-	$('body').click(function(event) {
-		changeClass();
-	});
+	// $('body').click(function(event) {
+	// 	changeClass();
+	// });
 
 	// goto
 	$('.js-scroll').click(function(event) {
@@ -25,7 +25,22 @@ head.ready(function() {
 	$('.people__all').slick({
 	  infinite: true,
 	  slidesToShow: 3,
-	  slidesToScroll: 2
+	  slidesToScroll: 1,
+	  responsive: [
+	      {
+	        breakpoint: 768,
+	        settings: {
+	          slidesToShow: 2
+	        }
+	      },
+	      {
+	        breakpoint: 480,
+	        settings: {
+	          centerMode: true,
+	          slidesToShow: 1
+	        }
+	      }
+	    ]
 	});
 					
 
