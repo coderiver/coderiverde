@@ -22,7 +22,12 @@ head.ready(function() {
 	        scrollTop: $("#"+scrollto).offset().top
 	    }, 1000);
 	});
-
+	$('.people__all').slick({
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 2
+	});
+					
 
 	//@todo ajax send form
 	//@todo slick for feedbacks

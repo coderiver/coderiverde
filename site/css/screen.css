@@ -202,6 +202,13 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 
 .btn { display: block; margin: 40px auto 0; width: 295px; height: 66px; background: #fff000; font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; font-size: 40px; text-transform: uppercase; }
 
+.slick-prev, .slick-next { display: none !important; }
+
+.superman { text-align: center; }
+.superman .superman__pic { text-align: center; display: block; }
+.superman .superman__pic img { display: inline; }
+.superman .superman__name { font-family: "Politica", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: -0.01em; font-size: 30px; padding-top: 10px; }
+
 .contacts { *zoom: 1; }
 .contacts:after { content: " "; display: table; clear: both; }
 
@@ -240,285 +247,285 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 .canvas .p { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; overflow: hidden; -webkit-transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55); transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55); -webkit-transition: all 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275); transition: all 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .canvas .p:before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #fff; content: " "; opacity: 0; }
 
-.p1 { -webkit-clip-path: polygon(16.11% 31.88%, 13.43% 36.12%, 20.51% 37.78%); background: #e6d800; -webkit-transition-delay: 32ms !important; transition-delay: 32ms !important; }
+.p1 { -webkit-clip-path: polygon(16.11% 31.88%, 13.43% 36.12%, 20.51% 37.78%); background: #FFF000; -webkit-transition-delay: 32ms !important; transition-delay: 32ms !important; }
 
-.p2 { -webkit-clip-path: polygon(19.93% 29.33%, 16.11% 31.88%, 20.51% 37.78%); background: #e6d800; -webkit-transition-delay: 496ms !important; transition-delay: 496ms !important; }
+.p2 { -webkit-clip-path: polygon(19.93% 29.33%, 16.11% 31.88%, 20.51% 37.78%); background: #b3a800; -webkit-transition-delay: 455ms !important; transition-delay: 455ms !important; }
 
-.p3 { -webkit-clip-path: polygon(22.39% 36.47%, 19.93% 29.33%, 20.51% 37.78%); background: #FFF000; -webkit-transition-delay: 378ms !important; transition-delay: 378ms !important; }
+.p3 { -webkit-clip-path: polygon(22.39% 36.47%, 19.93% 29.33%, 20.51% 37.78%); background: #ccc000; -webkit-transition-delay: 408ms !important; transition-delay: 408ms !important; }
 
-.p4 { -webkit-clip-path: polygon(24.49% 36.08%, 19.93% 29.33%, 22.39% 36.47%); background: #ccc000; -webkit-transition-delay: 86ms !important; transition-delay: 86ms !important; }
+.p4 { -webkit-clip-path: polygon(24.49% 36.08%, 19.93% 29.33%, 22.39% 36.47%); background: #807800; -webkit-transition-delay: 237ms !important; transition-delay: 237ms !important; }
 
-.p5 { -webkit-clip-path: polygon(29.58% 29.45%, 24.3% 28.48%, 27.78% 36.72%); background: #b3a800; -webkit-transition-delay: 244ms !important; transition-delay: 244ms !important; }
+.p5 { -webkit-clip-path: polygon(29.58% 29.45%, 24.3% 28.48%, 27.78% 36.72%); background: #b3a800; -webkit-transition-delay: 65ms !important; transition-delay: 65ms !important; }
 
-.p6 { -webkit-clip-path: polygon(20.51% 37.78%, 13.43% 36.12%, 19.18% 40.15%); background: #ccc000; -webkit-transition-delay: 5ms !important; transition-delay: 5ms !important; }
+.p6 { -webkit-clip-path: polygon(20.51% 37.78%, 13.43% 36.12%, 19.18% 40.15%); background: #4d4800; -webkit-transition-delay: 301ms !important; transition-delay: 301ms !important; }
 
-.p7 { -webkit-clip-path: polygon(27.78% 36.72%, 24.3% 28.48%, 24.49% 36.08%); background: #4d4800; -webkit-transition-delay: 92ms !important; transition-delay: 92ms !important; }
+.p7 { -webkit-clip-path: polygon(27.78% 36.72%, 24.3% 28.48%, 24.49% 36.08%); background: #807800; -webkit-transition-delay: 449ms !important; transition-delay: 449ms !important; }
 
-.p8 { -webkit-clip-path: polygon(24.3% 28.48%, 19.93% 29.33%, 24.49% 36.08%); background: #999000; -webkit-transition-delay: 361ms !important; transition-delay: 361ms !important; }
+.p8 { -webkit-clip-path: polygon(24.3% 28.48%, 19.93% 29.33%, 24.49% 36.08%); background: #b3a800; -webkit-transition-delay: 115ms !important; transition-delay: 115ms !important; }
 
-.p9 { -webkit-clip-path: polygon(32.31% 36.02%, 29.58% 29.45%, 27.78% 36.72%); background: #b3a800; -webkit-transition-delay: 447ms !important; transition-delay: 447ms !important; }
+.p9 { -webkit-clip-path: polygon(32.31% 36.02%, 29.58% 29.45%, 27.78% 36.72%); background: #b3a800; -webkit-transition-delay: 91ms !important; transition-delay: 91ms !important; }
 
-.p10 { -webkit-clip-path: polygon(12.39% 43.73%, 12.39% 49.47%, 18.65% 48.67%); background: #FFF000; -webkit-transition-delay: 442ms !important; transition-delay: 442ms !important; }
+.p10 { -webkit-clip-path: polygon(12.39% 43.73%, 12.39% 49.47%, 18.65% 48.67%); background: #b3a800; -webkit-transition-delay: 197ms !important; transition-delay: 197ms !important; }
 
-.p11 { -webkit-clip-path: polygon(18.65% 48.67%, 12.39% 49.47%, 18.65% 52.38%); background: #b3a800; -webkit-transition-delay: 38ms !important; transition-delay: 38ms !important; }
+.p11 { -webkit-clip-path: polygon(18.65% 48.67%, 12.39% 49.47%, 18.65% 52.38%); background: #999000; -webkit-transition-delay: 36ms !important; transition-delay: 36ms !important; }
 
-.p12 { -webkit-clip-path: polygon(12.39% 49.47%, 12.39% 52.98%, 18.65% 52.38%); background: #999000; -webkit-transition-delay: 434ms !important; transition-delay: 434ms !important; }
+.p12 { -webkit-clip-path: polygon(12.39% 49.47%, 12.39% 52.98%, 18.65% 52.38%); background: #807800; -webkit-transition-delay: 375ms !important; transition-delay: 375ms !important; }
 
-.p13 { -webkit-clip-path: polygon(19.18% 40.15%, 12.39% 41.98%, 18.65% 43.68%); background: #4d4800; -webkit-transition-delay: 377ms !important; transition-delay: 377ms !important; }
+.p13 { -webkit-clip-path: polygon(19.18% 40.15%, 12.39% 41.98%, 18.65% 43.68%); background: #807800; -webkit-transition-delay: 158ms !important; transition-delay: 158ms !important; }
 
-.p14 { -webkit-clip-path: polygon(12.39% 52.98%, 18.65% 55.92%, 18.65% 52.38%); background: #666000; -webkit-transition-delay: 490ms !important; transition-delay: 490ms !important; }
+.p14 { -webkit-clip-path: polygon(12.39% 52.98%, 18.65% 55.92%, 18.65% 52.38%); background: #FFF000; -webkit-transition-delay: 380ms !important; transition-delay: 380ms !important; }
 
-.p15 { -webkit-clip-path: polygon(12.39% 41.98%, 12.39% 43.73%, 18.65% 43.68%); background: #b3a800; -webkit-transition-delay: 166ms !important; transition-delay: 166ms !important; }
+.p15 { -webkit-clip-path: polygon(12.39% 41.98%, 12.39% 43.73%, 18.65% 43.68%); background: #e6d800; -webkit-transition-delay: 257ms !important; transition-delay: 257ms !important; }
 
-.p16 { -webkit-clip-path: polygon(18.65% 43.68%, 12.39% 43.73%, 18.65% 48.67%); background: #4d4800; -webkit-transition-delay: 243ms !important; transition-delay: 243ms !important; }
+.p16 { -webkit-clip-path: polygon(18.65% 43.68%, 12.39% 43.73%, 18.65% 48.67%); background: #807800; -webkit-transition-delay: 124ms !important; transition-delay: 124ms !important; }
 
-.p17 { -webkit-clip-path: polygon(13.43% 36.12%, 12.39% 41.98%, 19.18% 40.15%); background: #999000; -webkit-transition-delay: 454ms !important; transition-delay: 454ms !important; }
+.p17 { -webkit-clip-path: polygon(13.43% 36.12%, 12.39% 41.98%, 19.18% 40.15%); background: #b3a800; -webkit-transition-delay: 259ms !important; transition-delay: 259ms !important; }
 
-.p18 { -webkit-clip-path: polygon(29.69% 70.08%, 24.49% 63.52%, 24.39% 71.18%); background: #666000; -webkit-transition-delay: 380ms !important; transition-delay: 380ms !important; }
+.p18 { -webkit-clip-path: polygon(29.69% 70.08%, 24.49% 63.52%, 24.39% 71.18%); background: #ccc000; -webkit-transition-delay: 254ms !important; transition-delay: 254ms !important; }
 
-.p19 { -webkit-clip-path: polygon(27.7% 62.9%, 24.49% 63.52%, 29.69% 70.08%); background: #666000; -webkit-transition-delay: 294ms !important; transition-delay: 294ms !important; }
+.p19 { -webkit-clip-path: polygon(27.7% 62.9%, 24.49% 63.52%, 29.69% 70.08%); background: #b3a800; -webkit-transition-delay: 104ms !important; transition-delay: 104ms !important; }
 
-.p20 { -webkit-clip-path: polygon(22.41% 63.08%, 20.54% 61.75%, 20.01% 70.33%); background: #4d4800; -webkit-transition-delay: 25ms !important; transition-delay: 25ms !important; }
+.p20 { -webkit-clip-path: polygon(22.41% 63.08%, 20.54% 61.75%, 20.01% 70.33%); background: #e6d800; -webkit-transition-delay: 297ms !important; transition-delay: 297ms !important; }
 
-.p21 { -webkit-clip-path: polygon(24.49% 63.52%, 22.41% 63.08%, 24.39% 71.18%); background: #999000; -webkit-transition-delay: 325ms !important; transition-delay: 325ms !important; }
+.p21 { -webkit-clip-path: polygon(24.49% 63.52%, 22.41% 63.08%, 24.39% 71.18%); background: #807800; -webkit-transition-delay: 246ms !important; transition-delay: 246ms !important; }
 
-.p22 { -webkit-clip-path: polygon(30.96% 60.6%, 27.7% 62.9%, 32.56% 64.07%); background: #ccc000; -webkit-transition-delay: 102ms !important; transition-delay: 102ms !important; }
+.p22 { -webkit-clip-path: polygon(30.96% 60.6%, 27.7% 62.9%, 32.56% 64.07%); background: #666000; -webkit-transition-delay: 118ms !important; transition-delay: 118ms !important; }
 
-.p23 { -webkit-clip-path: polygon(33.93% 67.05%, 27.7% 62.9%, 29.69% 70.08%); background: #999000; -webkit-transition-delay: 437ms !important; transition-delay: 437ms !important; }
+.p23 { -webkit-clip-path: polygon(33.93% 67.05%, 27.7% 62.9%, 29.69% 70.08%); background: #999000; -webkit-transition-delay: 17ms !important; transition-delay: 17ms !important; }
 
-.p24 { -webkit-clip-path: polygon(32.56% 64.07%, 27.7% 62.9%, 33.93% 67.05%); background: #4d4800; -webkit-transition-delay: 366ms !important; transition-delay: 366ms !important; }
+.p24 { -webkit-clip-path: polygon(32.56% 64.07%, 27.7% 62.9%, 33.93% 67.05%); background: #FFF000; -webkit-transition-delay: 413ms !important; transition-delay: 413ms !important; }
 
-.p25 { -webkit-clip-path: polygon(20.01% 70.33%, 20.54% 61.75%, 16.18% 67.8%); background: #b3a800; -webkit-transition-delay: 260ms !important; transition-delay: 260ms !important; }
+.p25 { -webkit-clip-path: polygon(20.01% 70.33%, 20.54% 61.75%, 16.18% 67.8%); background: #FFF000; -webkit-transition-delay: 298ms !important; transition-delay: 298ms !important; }
 
-.p26 { -webkit-clip-path: polygon(19.18% 59.42%, 18.65% 55.92%, 12.39% 57.68%); background: #ccc000; -webkit-transition-delay: 482ms !important; transition-delay: 482ms !important; }
+.p26 { -webkit-clip-path: polygon(19.18% 59.42%, 18.65% 55.92%, 12.39% 57.68%); background: #666000; -webkit-transition-delay: 296ms !important; transition-delay: 296ms !important; }
 
-.p27 { -webkit-clip-path: polygon(12.39% 57.68%, 18.65% 55.92%, 12.39% 52.98%); background: #FFF000; -webkit-transition-delay: 346ms !important; transition-delay: 346ms !important; }
+.p27 { -webkit-clip-path: polygon(12.39% 57.68%, 18.65% 55.92%, 12.39% 52.98%); background: #ccc000; -webkit-transition-delay: 226ms !important; transition-delay: 226ms !important; }
 
-.p28 { -webkit-clip-path: polygon(33.93% 32.55%, 29.58% 29.45%, 32.31% 36.02%); background: #b3a800; -webkit-transition-delay: 177ms !important; transition-delay: 177ms !important; }
+.p28 { -webkit-clip-path: polygon(33.93% 32.55%, 29.58% 29.45%, 32.31% 36.02%); background: #FFF000; -webkit-transition-delay: 195ms !important; transition-delay: 195ms !important; }
 
-.p29 { -webkit-clip-path: polygon(20.54% 61.75%, 19.18% 59.42%, 16.18% 67.8%); background: #FFF000; -webkit-transition-delay: 476ms !important; transition-delay: 476ms !important; }
+.p29 { -webkit-clip-path: polygon(20.54% 61.75%, 19.18% 59.42%, 16.18% 67.8%); background: #999000; -webkit-transition-delay: 244ms !important; transition-delay: 244ms !important; }
 
-.p30 { -webkit-clip-path: polygon(30.91% 39%, 32.31% 36.02%, 27.78% 36.72%); background: #999000; -webkit-transition-delay: 481ms !important; transition-delay: 481ms !important; }
+.p30 { -webkit-clip-path: polygon(30.91% 39%, 32.31% 36.02%, 27.78% 36.72%); background: #b3a800; -webkit-transition-delay: 19ms !important; transition-delay: 19ms !important; }
 
-.p31 { -webkit-clip-path: polygon(16.18% 67.8%, 19.18% 59.42%, 13.44% 63.6%); background: #ccc000; -webkit-transition-delay: 66ms !important; transition-delay: 66ms !important; }
+.p31 { -webkit-clip-path: polygon(16.18% 67.8%, 19.18% 59.42%, 13.44% 63.6%); background: #e6d800; -webkit-transition-delay: 335ms !important; transition-delay: 335ms !important; }
 
-.p32 { -webkit-clip-path: polygon(13.44% 63.6%, 19.18% 59.42%, 12.39% 57.68%); background: #e6d800; -webkit-transition-delay: 165ms !important; transition-delay: 165ms !important; }
+.p32 { -webkit-clip-path: polygon(13.44% 63.6%, 19.18% 59.42%, 12.39% 57.68%); background: #4d4800; -webkit-transition-delay: 38ms !important; transition-delay: 38ms !important; }
 
-.p33 { -webkit-clip-path: polygon(24.39% 71.18%, 22.41% 63.08%, 20.01% 70.33%); background: #999000; -webkit-transition-delay: 34ms !important; transition-delay: 34ms !important; }
+.p33 { -webkit-clip-path: polygon(24.39% 71.18%, 22.41% 63.08%, 20.01% 70.33%); background: #e6d800; -webkit-transition-delay: 250ms !important; transition-delay: 250ms !important; }
 
-.p34 { -webkit-clip-path: polygon(53% 36.27%, 54.33% 28.83%, 49.13% 35.6%); background: #807800; -webkit-transition-delay: 56ms !important; transition-delay: 56ms !important; }
+.p34 { -webkit-clip-path: polygon(53% 36.27%, 54.33% 28.83%, 49.13% 35.6%); background: #b3a800; -webkit-transition-delay: 193ms !important; transition-delay: 193ms !important; }
 
-.p35 { -webkit-clip-path: polygon(59.89% 32%, 54.33% 28.83%, 53% 36.27%); background: #b3a800; -webkit-transition-delay: 268ms !important; transition-delay: 268ms !important; }
+.p35 { -webkit-clip-path: polygon(59.89% 32%, 54.33% 28.83%, 53% 36.27%); background: #807800; -webkit-transition-delay: 158ms !important; transition-delay: 158ms !important; }
 
-.p36 { -webkit-clip-path: polygon(54.33% 28.83%, 48.58% 28.12%, 49.13% 35.6%); background: #b3a800; -webkit-transition-delay: 302ms !important; transition-delay: 302ms !important; }
+.p36 { -webkit-clip-path: polygon(54.33% 28.83%, 48.58% 28.12%, 49.13% 35.6%); background: #FFF000; -webkit-transition-delay: 348ms !important; transition-delay: 348ms !important; }
 
-.p37 { -webkit-clip-path: polygon(54.46% 58.72%, 61.13% 58.65%, 53.94% 56.4%); background: #666000; -webkit-transition-delay: 16ms !important; transition-delay: 16ms !important; }
+.p37 { -webkit-clip-path: polygon(54.46% 58.72%, 61.13% 58.65%, 53.94% 56.4%); background: #b3a800; -webkit-transition-delay: 205ms !important; transition-delay: 205ms !important; }
 
-.p38 { -webkit-clip-path: polygon(57.15% 38.7%, 59.89% 32%, 53% 36.27%); background: #b3a800; -webkit-transition-delay: 425ms !important; transition-delay: 425ms !important; }
+.p38 { -webkit-clip-path: polygon(57.15% 38.7%, 59.89% 32%, 53% 36.27%); background: #666000; -webkit-transition-delay: 121ms !important; transition-delay: 121ms !important; }
 
-.p39 { -webkit-clip-path: polygon(60.21% 64.03%, 61.13% 58.65%, 54.46% 58.72%); background: #b3a800; -webkit-transition-delay: 78ms !important; transition-delay: 78ms !important; }
+.p39 { -webkit-clip-path: polygon(60.21% 64.03%, 61.13% 58.65%, 54.46% 58.72%); background: #807800; -webkit-transition-delay: 271ms !important; transition-delay: 271ms !important; }
 
-.p40 { -webkit-clip-path: polygon(45.73% 36.78%, 40.83% 31.67%, 44.59% 38.3%); background: #ccc000; -webkit-transition-delay: 459ms !important; transition-delay: 459ms !important; }
+.p40 { -webkit-clip-path: polygon(45.73% 36.78%, 40.83% 31.67%, 44.59% 38.3%); background: #4d4800; -webkit-transition-delay: 216ms !important; transition-delay: 216ms !important; }
 
-.p41 { -webkit-clip-path: polygon(40.83% 31.67%, 38.66% 35.65%, 44.59% 38.3%); background: #4d4800; -webkit-transition-delay: 72ms !important; transition-delay: 72ms !important; }
+.p41 { -webkit-clip-path: polygon(40.83% 31.67%, 38.66% 35.65%, 44.59% 38.3%); background: #4d4800; -webkit-transition-delay: 131ms !important; transition-delay: 131ms !important; }
 
-.p42 { -webkit-clip-path: polygon(49.13% 35.6%, 44.18% 29.05%, 47.33% 35.9%); background: #ccc000; -webkit-transition-delay: 146ms !important; transition-delay: 146ms !important; }
+.p42 { -webkit-clip-path: polygon(49.13% 35.6%, 44.18% 29.05%, 47.33% 35.9%); background: #b3a800; -webkit-transition-delay: 92ms !important; transition-delay: 92ms !important; }
 
-.p43 { -webkit-clip-path: polygon(47.33% 35.9%, 44.18% 29.05%, 45.73% 36.78%); background: #4d4800; -webkit-transition-delay: 330ms !important; transition-delay: 330ms !important; }
+.p43 { -webkit-clip-path: polygon(47.33% 35.9%, 44.18% 29.05%, 45.73% 36.78%); background: #b3a800; -webkit-transition-delay: 11ms !important; transition-delay: 11ms !important; }
 
-.p44 { -webkit-clip-path: polygon(44.59% 38.3%, 38.66% 35.65%, 44.15% 40.52%); background: #FFF000; -webkit-transition-delay: 335ms !important; transition-delay: 335ms !important; }
+.p44 { -webkit-clip-path: polygon(44.59% 38.3%, 38.66% 35.65%, 44.15% 40.52%); background: #807800; -webkit-transition-delay: 427ms !important; transition-delay: 427ms !important; }
 
-.p45 { -webkit-clip-path: polygon(48.58% 28.12%, 44.18% 29.05%, 49.13% 35.6%); background: #e6d800; -webkit-transition-delay: 391ms !important; transition-delay: 391ms !important; }
+.p45 { -webkit-clip-path: polygon(48.58% 28.12%, 44.18% 29.05%, 49.13% 35.6%); background: #b3a800; -webkit-transition-delay: 488ms !important; transition-delay: 488ms !important; }
 
-.p46 { -webkit-clip-path: polygon(44.59% 62.45%, 42.69% 69.78%, 48.99% 63.58%); background: #666000; -webkit-transition-delay: 195ms !important; transition-delay: 195ms !important; }
+.p46 { -webkit-clip-path: polygon(44.59% 62.45%, 42.69% 69.78%, 48.99% 63.58%); background: #999000; -webkit-transition-delay: 263ms !important; transition-delay: 263ms !important; }
 
-.p47 { -webkit-clip-path: polygon(42.69% 69.78%, 49.13% 71.07%, 48.99% 63.58%); background: #b3a800; -webkit-transition-delay: 375ms !important; transition-delay: 375ms !important; }
+.p47 { -webkit-clip-path: polygon(42.69% 69.78%, 49.13% 71.07%, 48.99% 63.58%); background: #e6d800; -webkit-transition-delay: 146ms !important; transition-delay: 146ms !important; }
 
-.p48 { -webkit-clip-path: polygon(36.8% 65.28%, 42.69% 69.78%, 44.59% 62.45%); background: #4d4800; -webkit-transition-delay: 84ms !important; transition-delay: 84ms !important; }
+.p48 { -webkit-clip-path: polygon(36.8% 65.28%, 42.69% 69.78%, 44.59% 62.45%); background: #FFF000; -webkit-transition-delay: 286ms !important; transition-delay: 286ms !important; }
 
-.p49 { -webkit-clip-path: polygon(40.31% 59.2%, 36.8% 65.28%, 44.59% 62.45%); background: #999000; -webkit-transition-delay: 404ms !important; transition-delay: 404ms !important; }
+.p49 { -webkit-clip-path: polygon(40.31% 59.2%, 36.8% 65.28%, 44.59% 62.45%); background: #4d4800; -webkit-transition-delay: 277ms !important; transition-delay: 277ms !important; }
 
-.p50 { -webkit-clip-path: polygon(48.99% 63.58%, 49.13% 71.07%, 51.54% 63.18%); background: #e6d800; -webkit-transition-delay: 385ms !important; transition-delay: 385ms !important; }
+.p50 { -webkit-clip-path: polygon(48.99% 63.58%, 49.13% 71.07%, 51.54% 63.18%); background: #FFF000; -webkit-transition-delay: 338ms !important; transition-delay: 338ms !important; }
 
-.p51 { -webkit-clip-path: polygon(53.86% 70.27%, 57.68% 67.93%, 53.23% 62.08%); background: #807800; -webkit-transition-delay: 270ms !important; transition-delay: 270ms !important; }
+.p51 { -webkit-clip-path: polygon(53.86% 70.27%, 57.68% 67.93%, 53.23% 62.08%); background: #FFF000; -webkit-transition-delay: 302ms !important; transition-delay: 302ms !important; }
 
-.p52 { -webkit-clip-path: polygon(53.23% 62.08%, 57.68% 67.93%, 54.16% 60.5%); background: #807800; -webkit-transition-delay: 432ms !important; transition-delay: 432ms !important; }
+.p52 { -webkit-clip-path: polygon(53.23% 62.08%, 57.68% 67.93%, 54.16% 60.5%); background: #e6d800; -webkit-transition-delay: 332ms !important; transition-delay: 332ms !important; }
 
-.p53 { -webkit-clip-path: polygon(57.68% 67.93%, 60.21% 64.03%, 54.16% 60.5%); background: #b3a800; -webkit-transition-delay: 25ms !important; transition-delay: 25ms !important; }
+.p53 { -webkit-clip-path: polygon(57.68% 67.93%, 60.21% 64.03%, 54.16% 60.5%); background: #666000; -webkit-transition-delay: 304ms !important; transition-delay: 304ms !important; }
 
-.p54 { -webkit-clip-path: polygon(49.13% 71.07%, 53.86% 70.27%, 51.54% 63.18%); background: #e6d800; -webkit-transition-delay: 91ms !important; transition-delay: 91ms !important; }
+.p54 { -webkit-clip-path: polygon(49.13% 71.07%, 53.86% 70.27%, 51.54% 63.18%); background: #b3a800; -webkit-transition-delay: 300ms !important; transition-delay: 300ms !important; }
 
-.p55 { -webkit-clip-path: polygon(54.16% 60.5%, 60.21% 64.03%, 54.46% 58.72%); background: #999000; -webkit-transition-delay: 271ms !important; transition-delay: 271ms !important; }
+.p55 { -webkit-clip-path: polygon(54.16% 60.5%, 60.21% 64.03%, 54.46% 58.72%); background: #999000; -webkit-transition-delay: 263ms !important; transition-delay: 263ms !important; }
 
-.p56 { -webkit-clip-path: polygon(51.54% 63.18%, 53.86% 70.27%, 53.23% 62.08%); background: #b3a800; -webkit-transition-delay: 47ms !important; transition-delay: 47ms !important; }
+.p56 { -webkit-clip-path: polygon(51.54% 63.18%, 53.86% 70.27%, 53.23% 62.08%); background: #666000; -webkit-transition-delay: 94ms !important; transition-delay: 94ms !important; }
 
-.p57 { -webkit-clip-path: polygon(44.18% 29.05%, 40.83% 31.67%, 45.73% 36.78%); background: #e6d800; -webkit-transition-delay: 25ms !important; transition-delay: 25ms !important; }
+.p57 { -webkit-clip-path: polygon(44.18% 29.05%, 40.83% 31.67%, 45.73% 36.78%); background: #b3a800; -webkit-transition-delay: 422ms !important; transition-delay: 422ms !important; }
 
-.p58 { -webkit-clip-path: polygon(52.43% 54.85%, 53.94% 56.4%, 55.19% 47.93%); background: #4d4800; -webkit-transition-delay: 338ms !important; transition-delay: 338ms !important; }
+.p58 { -webkit-clip-path: polygon(52.43% 54.85%, 53.94% 56.4%, 55.19% 47.93%); background: #807800; -webkit-transition-delay: 351ms !important; transition-delay: 351ms !important; }
 
-.p59 { -webkit-clip-path: polygon(50.1% 53.68%, 52.43% 54.85%, 55.19% 47.93%); background: #666000; -webkit-transition-delay: 458ms !important; transition-delay: 458ms !important; }
+.p59 { -webkit-clip-path: polygon(50.1% 53.68%, 52.43% 54.85%, 55.19% 47.93%); background: #4d4800; -webkit-transition-delay: 367ms !important; transition-delay: 367ms !important; }
 
-.p60 { -webkit-clip-path: polygon(51.19% 46.3%, 50.1% 53.68%, 55.19% 47.93%); background: #b3a800; -webkit-transition-delay: 415ms !important; transition-delay: 415ms !important; }
+.p60 { -webkit-clip-path: polygon(51.19% 46.3%, 50.1% 53.68%, 55.19% 47.93%); background: #ccc000; -webkit-transition-delay: 256ms !important; transition-delay: 256ms !important; }
 
-.p61 { -webkit-clip-path: polygon(47.11% 52.57%, 50.1% 53.68%, 51.19% 46.3%); background: #4d4800; -webkit-transition-delay: 295ms !important; transition-delay: 295ms !important; }
+.p61 { -webkit-clip-path: polygon(47.11% 52.57%, 50.1% 53.68%, 51.19% 46.3%); background: #b3a800; -webkit-transition-delay: 466ms !important; transition-delay: 466ms !important; }
 
-.p62 { -webkit-clip-path: polygon(48.24% 45.33%, 47.11% 52.57%, 51.19% 46.3%); background: #ccc000; -webkit-transition-delay: 150ms !important; transition-delay: 150ms !important; }
+.p62 { -webkit-clip-path: polygon(48.24% 45.33%, 47.11% 52.57%, 51.19% 46.3%); background: #999000; -webkit-transition-delay: 61ms !important; transition-delay: 61ms !important; }
 
-.p63 { -webkit-clip-path: polygon(38.66% 35.65%, 37.9% 40.7%, 44.15% 40.52%); background: #999000; -webkit-transition-delay: 477ms !important; transition-delay: 477ms !important; }
+.p63 { -webkit-clip-path: polygon(38.66% 35.65%, 37.9% 40.7%, 44.15% 40.52%); background: #999000; -webkit-transition-delay: 223ms !important; transition-delay: 223ms !important; }
 
-.p64 { -webkit-clip-path: polygon(58.65% 50.73%, 53.94% 56.4%, 60.5% 54.2%); background: #e6d800; -webkit-transition-delay: 239ms !important; transition-delay: 239ms !important; }
+.p64 { -webkit-clip-path: polygon(58.65% 50.73%, 53.94% 56.4%, 60.5% 54.2%); background: #666000; -webkit-transition-delay: 267ms !important; transition-delay: 267ms !important; }
 
-.p65 { -webkit-clip-path: polygon(55.19% 47.93%, 53.94% 56.4%, 58.65% 50.73%); background: #e6d800; -webkit-transition-delay: 60ms !important; transition-delay: 60ms !important; }
+.p65 { -webkit-clip-path: polygon(55.19% 47.93%, 53.94% 56.4%, 58.65% 50.73%); background: #b3a800; -webkit-transition-delay: 245ms !important; transition-delay: 245ms !important; }
 
-.p66 { -webkit-clip-path: polygon(53.94% 56.4%, 61.13% 58.65%, 60.5% 54.2%); background: #4d4800; -webkit-transition-delay: 409ms !important; transition-delay: 409ms !important; }
+.p66 { -webkit-clip-path: polygon(53.94% 56.4%, 61.13% 58.65%, 60.5% 54.2%); background: #b3a800; -webkit-transition-delay: 324ms !important; transition-delay: 324ms !important; }
 
-.p67 { -webkit-clip-path: polygon(44.15% 40.52%, 38.65% 45.48%, 44.63% 42.68%); background: #FFF000; -webkit-transition-delay: 160ms !important; transition-delay: 160ms !important; }
+.p67 { -webkit-clip-path: polygon(44.15% 40.52%, 38.65% 45.48%, 44.63% 42.68%); background: #4d4800; -webkit-transition-delay: 358ms !important; transition-delay: 358ms !important; }
 
-.p68 { -webkit-clip-path: polygon(38.65% 45.48%, 40.68% 48.82%, 44.63% 42.68%); background: #666000; -webkit-transition-delay: 44ms !important; transition-delay: 44ms !important; }
+.p68 { -webkit-clip-path: polygon(38.65% 45.48%, 40.68% 48.82%, 44.63% 42.68%); background: #666000; -webkit-transition-delay: 99ms !important; transition-delay: 99ms !important; }
 
-.p69 { -webkit-clip-path: polygon(37.9% 40.7%, 38.65% 45.48%, 44.15% 40.52%); background: #b3a800; -webkit-transition-delay: 163ms !important; transition-delay: 163ms !important; }
+.p69 { -webkit-clip-path: polygon(37.9% 40.7%, 38.65% 45.48%, 44.15% 40.52%); background: #FFF000; -webkit-transition-delay: 316ms !important; transition-delay: 316ms !important; }
 
-.p70 { -webkit-clip-path: polygon(43.63% 51.08%, 47.11% 52.57%, 48.24% 45.33%); background: #999000; -webkit-transition-delay: 399ms !important; transition-delay: 399ms !important; }
+.p70 { -webkit-clip-path: polygon(43.63% 51.08%, 47.11% 52.57%, 48.24% 45.33%); background: #e6d800; -webkit-transition-delay: 327ms !important; transition-delay: 327ms !important; }
 
-.p71 { -webkit-clip-path: polygon(40.68% 48.82%, 43.63% 51.08%, 46.03% 44.2%); background: #807800; -webkit-transition-delay: 231ms !important; transition-delay: 231ms !important; }
+.p71 { -webkit-clip-path: polygon(40.68% 48.82%, 43.63% 51.08%, 46.03% 44.2%); background: #b3a800; -webkit-transition-delay: 16ms !important; transition-delay: 16ms !important; }
 
-.p72 { -webkit-clip-path: polygon(46.03% 44.2%, 43.63% 51.08%, 48.24% 45.33%); background: #ccc000; -webkit-transition-delay: 462ms !important; transition-delay: 462ms !important; }
+.p72 { -webkit-clip-path: polygon(46.03% 44.2%, 43.63% 51.08%, 48.24% 45.33%); background: #666000; -webkit-transition-delay: 84ms !important; transition-delay: 84ms !important; }
 
-.p73 { -webkit-clip-path: polygon(44.63% 42.68%, 40.68% 48.82%, 46.03% 44.2%); background: #e6d800; -webkit-transition-delay: 254ms !important; transition-delay: 254ms !important; }
+.p73 { -webkit-clip-path: polygon(44.63% 42.68%, 40.68% 48.82%, 46.03% 44.2%); background: #807800; -webkit-transition-delay: 376ms !important; transition-delay: 376ms !important; }
 
-.p74 { -webkit-clip-path: polygon(71.96% 42.68%, 68.01% 48.82%, 73.35% 44.2%); background: #b3a800; -webkit-transition-delay: 160ms !important; transition-delay: 160ms !important; }
+.p74 { -webkit-clip-path: polygon(71.96% 42.68%, 68.01% 48.82%, 73.35% 44.2%); background: #b3a800; -webkit-transition-delay: 15ms !important; transition-delay: 15ms !important; }
 
-.p75 { -webkit-clip-path: polygon(70.95% 51.08%, 74.44% 52.57%, 73.35% 44.2%); background: #666000; -webkit-transition-delay: 148ms !important; transition-delay: 148ms !important; }
+.p75 { -webkit-clip-path: polygon(70.95% 51.08%, 74.44% 52.57%, 73.35% 44.2%); background: #666000; -webkit-transition-delay: 195ms !important; transition-delay: 195ms !important; }
 
-.p76 { -webkit-clip-path: polygon(68.01% 48.82%, 70.95% 51.08%, 73.35% 44.2%); background: #4d4800; -webkit-transition-delay: 127ms !important; transition-delay: 127ms !important; }
+.p76 { -webkit-clip-path: polygon(68.01% 48.82%, 70.95% 51.08%, 73.35% 44.2%); background: #b3a800; -webkit-transition-delay: 206ms !important; transition-delay: 206ms !important; }
 
-.p77 { -webkit-clip-path: polygon(73.35% 44.2%, 74.44% 52.57%, 75.58% 45.33%); background: #e6d800; -webkit-transition-delay: 451ms !important; transition-delay: 451ms !important; }
+.p77 { -webkit-clip-path: polygon(73.35% 44.2%, 74.44% 52.57%, 75.58% 45.33%); background: #4d4800; -webkit-transition-delay: 485ms !important; transition-delay: 485ms !important; }
 
-.p78 { -webkit-clip-path: polygon(66% 35.65%, 65.23% 40.7%, 71.91% 38.3%); background: #666000; -webkit-transition-delay: 45ms !important; transition-delay: 45ms !important; }
+.p78 { -webkit-clip-path: polygon(66% 35.65%, 65.23% 40.7%, 71.91% 38.3%); background: #666000; -webkit-transition-delay: 453ms !important; transition-delay: 453ms !important; }
 
-.p79 { -webkit-clip-path: polygon(74.44% 52.57%, 77.44% 53.68%, 75.58% 45.33%); background: #b3a800; -webkit-transition-delay: 137ms !important; transition-delay: 137ms !important; }
+.p79 { -webkit-clip-path: polygon(74.44% 52.57%, 77.44% 53.68%, 75.58% 45.33%); background: #b3a800; -webkit-transition-delay: 90ms !important; transition-delay: 90ms !important; }
 
-.p80 { -webkit-clip-path: polygon(65.98% 45.48%, 68.01% 48.82%, 71.96% 42.68%); background: #4d4800; -webkit-transition-delay: 461ms !important; transition-delay: 461ms !important; }
+.p80 { -webkit-clip-path: polygon(65.98% 45.48%, 68.01% 48.82%, 71.96% 42.68%); background: #FFF000; -webkit-transition-delay: 163ms !important; transition-delay: 163ms !important; }
 
-.p81 { -webkit-clip-path: polygon(68.15% 31.67%, 66% 35.65%, 71.91% 38.3%); background: #ccc000; -webkit-transition-delay: 272ms !important; transition-delay: 272ms !important; }
+.p81 { -webkit-clip-path: polygon(68.15% 31.67%, 66% 35.65%, 71.91% 38.3%); background: #807800; -webkit-transition-delay: 498ms !important; transition-delay: 498ms !important; }
 
-.p82 { -webkit-clip-path: polygon(65.23% 40.7%, 65.98% 45.48%, 71.48% 40.52%); background: #ccc000; -webkit-transition-delay: 336ms !important; transition-delay: 336ms !important; }
+.p82 { -webkit-clip-path: polygon(65.23% 40.7%, 65.98% 45.48%, 71.48% 40.52%); background: #4d4800; -webkit-transition-delay: 320ms !important; transition-delay: 320ms !important; }
 
-.p83 { -webkit-clip-path: polygon(71.48% 40.52%, 65.98% 45.48%, 71.96% 42.68%); background: #ccc000; -webkit-transition-delay: 37ms !important; transition-delay: 37ms !important; }
+.p83 { -webkit-clip-path: polygon(71.48% 40.52%, 65.98% 45.48%, 71.96% 42.68%); background: #FFF000; -webkit-transition-delay: 31ms !important; transition-delay: 31ms !important; }
 
-.p84 { -webkit-clip-path: polygon(71.91% 38.3%, 65.23% 40.7%, 71.48% 40.52%); background: #807800; -webkit-transition-delay: 287ms !important; transition-delay: 287ms !important; }
+.p84 { -webkit-clip-path: polygon(71.91% 38.3%, 65.23% 40.7%, 71.48% 40.52%); background: #999000; -webkit-transition-delay: 424ms !important; transition-delay: 424ms !important; }
 
-.p85 { -webkit-clip-path: polygon(75.58% 45.33%, 77.44% 53.68%, 78.53% 46.3%); background: #b3a800; -webkit-transition-delay: 153ms !important; transition-delay: 153ms !important; }
+.p85 { -webkit-clip-path: polygon(75.58% 45.33%, 77.44% 53.68%, 78.53% 46.3%); background: #666000; -webkit-transition-delay: 98ms !important; transition-delay: 98ms !important; }
 
-.p86 { -webkit-clip-path: polygon(81.26% 56.4%, 81.79% 58.72%, 87.84% 54.2%); background: #999000; -webkit-transition-delay: 464ms !important; transition-delay: 464ms !important; }
+.p86 { -webkit-clip-path: polygon(81.26% 56.4%, 81.79% 58.72%, 87.84% 54.2%); background: #FFF000; -webkit-transition-delay: 459ms !important; transition-delay: 459ms !important; }
 
-.p87 { -webkit-clip-path: polygon(85.98% 50.73%, 81.26% 56.4%, 87.84% 54.2%); background: #807800; -webkit-transition-delay: 353ms !important; transition-delay: 353ms !important; }
+.p87 { -webkit-clip-path: polygon(85.98% 50.73%, 81.26% 56.4%, 87.84% 54.2%); background: #b3a800; -webkit-transition-delay: 446ms !important; transition-delay: 446ms !important; }
 
-.p88 { -webkit-clip-path: polygon(81.79% 58.72%, 87.54% 64.03%, 88.45% 58.65%); background: #b3a800; -webkit-transition-delay: 119ms !important; transition-delay: 119ms !important; }
+.p88 { -webkit-clip-path: polygon(81.79% 58.72%, 87.54% 64.03%, 88.45% 58.65%); background: #b3a800; -webkit-transition-delay: 241ms !important; transition-delay: 241ms !important; }
 
-.p89 { -webkit-clip-path: polygon(87.84% 54.2%, 81.79% 58.72%, 88.45% 58.65%); background: #4d4800; -webkit-transition-delay: 259ms !important; transition-delay: 259ms !important; }
+.p89 { -webkit-clip-path: polygon(87.84% 54.2%, 81.79% 58.72%, 88.45% 58.65%); background: #e6d800; -webkit-transition-delay: 423ms !important; transition-delay: 423ms !important; }
 
-.p90 { -webkit-clip-path: polygon(78.53% 46.3%, 79.76% 54.85%, 82.53% 47.93%); background: #b3a800; -webkit-transition-delay: 176ms !important; transition-delay: 176ms !important; }
+.p90 { -webkit-clip-path: polygon(78.53% 46.3%, 79.76% 54.85%, 82.53% 47.93%); background: #FFF000; -webkit-transition-delay: 203ms !important; transition-delay: 203ms !important; }
 
-.p91 { -webkit-clip-path: polygon(77.44% 53.68%, 79.76% 54.85%, 78.53% 46.3%); background: #FFF000; -webkit-transition-delay: 432ms !important; transition-delay: 432ms !important; }
+.p91 { -webkit-clip-path: polygon(77.44% 53.68%, 79.76% 54.85%, 78.53% 46.3%); background: #4d4800; -webkit-transition-delay: 351ms !important; transition-delay: 351ms !important; }
 
-.p92 { -webkit-clip-path: polygon(79.76% 54.85%, 81.26% 56.4%, 85.98% 50.73%); background: #FFF000; -webkit-transition-delay: 293ms !important; transition-delay: 293ms !important; }
+.p92 { -webkit-clip-path: polygon(79.76% 54.85%, 81.26% 56.4%, 85.98% 50.73%); background: #ccc000; -webkit-transition-delay: 304ms !important; transition-delay: 304ms !important; }
 
-.p93 { -webkit-clip-path: polygon(82.53% 47.93%, 79.76% 54.85%, 85.98% 50.73%); background: #666000; -webkit-transition-delay: 215ms !important; transition-delay: 215ms !important; }
+.p93 { -webkit-clip-path: polygon(82.53% 47.93%, 79.76% 54.85%, 85.98% 50.73%); background: #FFF000; -webkit-transition-delay: 179ms !important; transition-delay: 179ms !important; }
 
-.p94 { -webkit-clip-path: polygon(80.56% 62.08%, 85% 67.93%, 81.49% 60.5%); background: #666000; -webkit-transition-delay: 264ms !important; transition-delay: 264ms !important; }
+.p94 { -webkit-clip-path: polygon(80.56% 62.08%, 85% 67.93%, 81.49% 60.5%); background: #807800; -webkit-transition-delay: 76ms !important; transition-delay: 76ms !important; }
 
-.p95 { -webkit-clip-path: polygon(73.05% 36.78%, 68.15% 31.67%, 71.91% 38.3%); background: #4d4800; -webkit-transition-delay: 65ms !important; transition-delay: 65ms !important; }
+.p95 { -webkit-clip-path: polygon(73.05% 36.78%, 68.15% 31.67%, 71.91% 38.3%); background: #4d4800; -webkit-transition-delay: 276ms !important; transition-delay: 276ms !important; }
 
-.p96 { -webkit-clip-path: polygon(76.45% 71.07%, 81.2% 70.27%, 78.88% 63.18%); background: #b3a800; -webkit-transition-delay: 125ms !important; transition-delay: 125ms !important; }
+.p96 { -webkit-clip-path: polygon(76.45% 71.07%, 81.2% 70.27%, 78.88% 63.18%); background: #666000; -webkit-transition-delay: 237ms !important; transition-delay: 237ms !important; }
 
-.p97 { -webkit-clip-path: polygon(81.2% 70.27%, 85% 67.93%, 80.56% 62.08%); background: #b3a800; -webkit-transition-delay: 290ms !important; transition-delay: 290ms !important; }
+.p97 { -webkit-clip-path: polygon(81.2% 70.27%, 85% 67.93%, 80.56% 62.08%); background: #807800; -webkit-transition-delay: 18ms !important; transition-delay: 18ms !important; }
 
-.p98 { -webkit-clip-path: polygon(70.01% 69.78%, 76.45% 71.07%, 76.31% 63.58%); background: #FFF000; -webkit-transition-delay: 335ms !important; transition-delay: 335ms !important; }
+.p98 { -webkit-clip-path: polygon(70.01% 69.78%, 76.45% 71.07%, 76.31% 63.58%); background: #ccc000; -webkit-transition-delay: 209ms !important; transition-delay: 209ms !important; }
 
-.p99 { -webkit-clip-path: polygon(64.14% 65.28%, 70.01% 69.78%, 71.91% 62.45%); background: #b3a800; -webkit-transition-delay: 56ms !important; transition-delay: 56ms !important; }
+.p99 { -webkit-clip-path: polygon(64.14% 65.28%, 70.01% 69.78%, 71.91% 62.45%); background: #FFF000; -webkit-transition-delay: 2ms !important; transition-delay: 2ms !important; }
 
-.p100 { -webkit-clip-path: polygon(78.88% 63.18%, 81.2% 70.27%, 80.56% 62.08%); background: #FFF000; -webkit-transition-delay: 231ms !important; transition-delay: 231ms !important; }
+.p100 { -webkit-clip-path: polygon(78.88% 63.18%, 81.2% 70.27%, 80.56% 62.08%); background: #807800; -webkit-transition-delay: 308ms !important; transition-delay: 308ms !important; }
 
-.p101 { -webkit-clip-path: polygon(67.65% 59.2%, 64.14% 65.28%, 71.91% 62.45%); background: #999000; -webkit-transition-delay: 29ms !important; transition-delay: 29ms !important; }
+.p101 { -webkit-clip-path: polygon(67.65% 59.2%, 64.14% 65.28%, 71.91% 62.45%); background: #b3a800; -webkit-transition-delay: 306ms !important; transition-delay: 306ms !important; }
 
-.p102 { -webkit-clip-path: polygon(85% 67.93%, 87.54% 64.03%, 81.49% 60.5%); background: #e6d800; -webkit-transition-delay: 417ms !important; transition-delay: 417ms !important; }
+.p102 { -webkit-clip-path: polygon(85% 67.93%, 87.54% 64.03%, 81.49% 60.5%); background: #b3a800; -webkit-transition-delay: 378ms !important; transition-delay: 378ms !important; }
 
-.p103 { -webkit-clip-path: polygon(71.91% 62.45%, 70.01% 69.78%, 76.31% 63.58%); background: #666000; -webkit-transition-delay: 447ms !important; transition-delay: 447ms !important; }
+.p103 { -webkit-clip-path: polygon(71.91% 62.45%, 70.01% 69.78%, 76.31% 63.58%); background: #999000; -webkit-transition-delay: 103ms !important; transition-delay: 103ms !important; }
 
-.p104 { -webkit-clip-path: polygon(76.31% 63.58%, 76.45% 71.07%, 78.88% 63.18%); background: #807800; -webkit-transition-delay: 329ms !important; transition-delay: 329ms !important; }
+.p104 { -webkit-clip-path: polygon(76.31% 63.58%, 76.45% 71.07%, 78.88% 63.18%); background: #4d4800; -webkit-transition-delay: 447ms !important; transition-delay: 447ms !important; }
 
-.p105 { -webkit-clip-path: polygon(75.9% 28.12%, 71.51% 29.05%, 74.65% 35.9%); background: #4d4800; -webkit-transition-delay: 415ms !important; transition-delay: 415ms !important; }
+.p105 { -webkit-clip-path: polygon(75.9% 28.12%, 71.51% 29.05%, 74.65% 35.9%); background: #807800; -webkit-transition-delay: 172ms !important; transition-delay: 172ms !important; }
 
-.p106 { -webkit-clip-path: polygon(76.45% 35.6%, 75.9% 28.12%, 74.65% 35.9%); background: #b3a800; -webkit-transition-delay: 305ms !important; transition-delay: 305ms !important; }
+.p106 { -webkit-clip-path: polygon(76.45% 35.6%, 75.9% 28.12%, 74.65% 35.9%); background: #b3a800; -webkit-transition-delay: 399ms !important; transition-delay: 399ms !important; }
 
-.p107 { -webkit-clip-path: polygon(81.49% 60.5%, 87.54% 64.03%, 81.79% 58.72%); background: #999000; -webkit-transition-delay: 418ms !important; transition-delay: 418ms !important; }
+.p107 { -webkit-clip-path: polygon(81.49% 60.5%, 87.54% 64.03%, 81.79% 58.72%); background: #b3a800; -webkit-transition-delay: 316ms !important; transition-delay: 316ms !important; }
 
-.p108 { -webkit-clip-path: polygon(71.51% 29.05%, 68.15% 31.67%, 73.05% 36.78%); background: #e6d800; -webkit-transition-delay: 303ms !important; transition-delay: 303ms !important; }
+.p108 { -webkit-clip-path: polygon(71.51% 29.05%, 68.15% 31.67%, 73.05% 36.78%); background: #b3a800; -webkit-transition-delay: 268ms !important; transition-delay: 268ms !important; }
 
-.p109 { -webkit-clip-path: polygon(74.65% 35.9%, 71.51% 29.05%, 73.05% 36.78%); background: #4d4800; -webkit-transition-delay: 331ms !important; transition-delay: 331ms !important; }
+.p109 { -webkit-clip-path: polygon(74.65% 35.9%, 71.51% 29.05%, 73.05% 36.78%); background: #FFF000; -webkit-transition-delay: 148ms !important; transition-delay: 148ms !important; }
 
-.p110 { -webkit-clip-path: polygon(87.21% 32%, 81.65% 28.83%, 80.33% 36.27%); background: #FFF000; -webkit-transition-delay: 122ms !important; transition-delay: 122ms !important; }
+.p110 { -webkit-clip-path: polygon(87.21% 32%, 81.65% 28.83%, 80.33% 36.27%); background: #ccc000; -webkit-transition-delay: 226ms !important; transition-delay: 226ms !important; }
 
-.p111 { -webkit-clip-path: polygon(84.48% 38.7%, 87.21% 32%, 80.33% 36.27%); background: #999000; -webkit-transition-delay: 34ms !important; transition-delay: 34ms !important; }
+.p111 { -webkit-clip-path: polygon(84.48% 38.7%, 87.21% 32%, 80.33% 36.27%); background: #666000; -webkit-transition-delay: 218ms !important; transition-delay: 218ms !important; }
 
-.p112 { -webkit-clip-path: polygon(80.33% 36.27%, 81.65% 28.83%, 76.45% 35.6%); background: #807800; -webkit-transition-delay: 346ms !important; transition-delay: 346ms !important; }
+.p112 { -webkit-clip-path: polygon(80.33% 36.27%, 81.65% 28.83%, 76.45% 35.6%); background: #FFF000; -webkit-transition-delay: 215ms !important; transition-delay: 215ms !important; }
 
-.p113 { -webkit-clip-path: polygon(81.65% 28.83%, 75.9% 28.12%, 76.45% 35.6%); background: #b3a800; -webkit-transition-delay: 144ms !important; transition-delay: 144ms !important; }
+.p113 { -webkit-clip-path: polygon(81.65% 28.83%, 75.9% 28.12%, 76.45% 35.6%); background: #ccc000; -webkit-transition-delay: 51ms !important; transition-delay: 51ms !important; }
 
-.p114 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 147ms !important; transition-delay: 147ms !important; }
+.p114 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 72ms !important; transition-delay: 72ms !important; }
 
-.p115 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 396ms !important; transition-delay: 396ms !important; }
+.p115 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 230ms !important; transition-delay: 230ms !important; }
 
-.p116 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 43ms !important; transition-delay: 43ms !important; }
+.p116 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 262ms !important; transition-delay: 262ms !important; }
 
-.p117 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 132ms !important; transition-delay: 132ms !important; }
+.p117 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 147ms !important; transition-delay: 147ms !important; }
 
-.p118 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 95ms !important; transition-delay: 95ms !important; }
+.p118 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 45ms !important; transition-delay: 45ms !important; }
 
-.p119 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 500ms !important; transition-delay: 500ms !important; }
+.p119 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 309ms !important; transition-delay: 309ms !important; }
 
-.p120 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 57ms !important; transition-delay: 57ms !important; }
+.p120 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #4d4800; -webkit-transition-delay: 161ms !important; transition-delay: 161ms !important; }
 
-.p121 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 53ms !important; transition-delay: 53ms !important; }
+.p121 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; -webkit-transition-delay: 106ms !important; transition-delay: 106ms !important; }
 
-.p122 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 109ms !important; transition-delay: 109ms !important; }
+.p122 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; -webkit-transition-delay: 255ms !important; transition-delay: 255ms !important; }
 
-.p123 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 330ms !important; transition-delay: 330ms !important; }
+.p123 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; -webkit-transition-delay: 281ms !important; transition-delay: 281ms !important; }
 
-.p124 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #666000; -webkit-transition-delay: 18ms !important; transition-delay: 18ms !important; }
+.p124 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 394ms !important; transition-delay: 394ms !important; }
 
-.p125 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 219ms !important; transition-delay: 219ms !important; }
+.p125 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 433ms !important; transition-delay: 433ms !important; }
 
-.p126 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; -webkit-transition-delay: 126ms !important; transition-delay: 126ms !important; }
+.p126 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 95ms !important; transition-delay: 95ms !important; }
 
-.p127 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #666000; -webkit-transition-delay: 145ms !important; transition-delay: 145ms !important; }
+.p127 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 141ms !important; transition-delay: 141ms !important; }
 
-.p128 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 207ms !important; transition-delay: 207ms !important; }
+.p128 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 175ms !important; transition-delay: 175ms !important; }
 
-.p129 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 230ms !important; transition-delay: 230ms !important; }
+.p129 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 465ms !important; transition-delay: 465ms !important; }
 
-.p130 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 349ms !important; transition-delay: 349ms !important; }
+.p130 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 255ms !important; transition-delay: 255ms !important; }
 
-.p131 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #666000; -webkit-transition-delay: 80ms !important; transition-delay: 80ms !important; }
+.p131 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 271ms !important; transition-delay: 271ms !important; }
 
-.p132 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #4d4800; -webkit-transition-delay: 417ms !important; transition-delay: 417ms !important; }
+.p132 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 226ms !important; transition-delay: 226ms !important; }
 
-.p133 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 8ms !important; transition-delay: 8ms !important; }
+.p133 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 88ms !important; transition-delay: 88ms !important; }
 
-.p134 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 264ms !important; transition-delay: 264ms !important; }
+.p134 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #807800; -webkit-transition-delay: 17ms !important; transition-delay: 17ms !important; }
 
-.p135 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #e6d800; -webkit-transition-delay: 424ms !important; transition-delay: 424ms !important; }
+.p135 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 369ms !important; transition-delay: 369ms !important; }
 
-.p136 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 214ms !important; transition-delay: 214ms !important; }
+.p136 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #666000; -webkit-transition-delay: 219ms !important; transition-delay: 219ms !important; }
 
-.p137 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 417ms !important; transition-delay: 417ms !important; }
+.p137 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 392ms !important; transition-delay: 392ms !important; }
 
-.p138 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #ccc000; -webkit-transition-delay: 496ms !important; transition-delay: 496ms !important; }
+.p138 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #b3a800; -webkit-transition-delay: 295ms !important; transition-delay: 295ms !important; }
 
-.p139 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #FFF000; -webkit-transition-delay: 20ms !important; transition-delay: 20ms !important; }
+.p139 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #999000; -webkit-transition-delay: 101ms !important; transition-delay: 101ms !important; }
 
-.p140 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #4d4800; -webkit-transition-delay: 6ms !important; transition-delay: 6ms !important; }
+.p140 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); background: #4d4800; -webkit-transition-delay: 353ms !important; transition-delay: 353ms !important; }
 
 .figure1 .p1 { -webkit-clip-path: polygon(14.1% 53.47%, 18.88% 53.47%, 14.1% 45.92%); }
 .figure1 .p2 { -webkit-clip-path: polygon(9.31% 53.47%, 14.1% 53.47%, 9.31% 45.92%); }
@@ -801,3 +808,26 @@ body { font-size: 16px; line-height: 1.2; color: #000; font-family: "Roboto-Ligh
 .figure2 .p138 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); }
 .figure2 .p139 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); }
 .figure2 .p140 { -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%); }
+
+/* Slider */
+.slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+
+.slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
+.slick-list:focus { outline: none; }
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+
+.slick-slider .slick-track, .slick-slider .slick-list { -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+
+.slick-track { position: relative; left: 0; top: 0; display: block; }
+.slick-track:before, .slick-track:after { content: ""; display: table; }
+.slick-track:after { clear: both; }
+.slick-loading .slick-track { visibility: hidden; }
+
+.slick-slide { float: left; height: 100%; min-height: 1px; display: none; }
+[dir="rtl"] .slick-slide { float: right; }
+.slick-slide img { display: block; }
+.slick-slide.slick-loading img { display: none; }
+.slick-slide.dragging img { pointer-events: none; }
+.slick-initialized .slick-slide { display: block; }
+.slick-loading .slick-slide { visibility: hidden; }
+.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
