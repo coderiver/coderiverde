@@ -368,28 +368,29 @@
   position: relative
   +r(830)
     margin: 0 
+  .slider__nav
+    position: absolute
+    bottom: -5px
+    left: 25px
+    
 
-.slider__nav
-  position: absolute
-  bottom: -5px
-  left: 25px
-  
-
-.slider__prev,
-.slider__next
-  background: none
-  text-decoration: none
-  color: inherit
-  .icon
-    transition: fill 0.2s linear
-  &:hover
+  .slider__prev,
+  .slider__next,
+  .slick-prev,
+  .slick-next
+    background: none
+    text-decoration: none
+    color: inherit
     .icon
-      fill: $yellow
+      transition: fill 0.2s linear
+    &:hover
+      .icon
+        fill: $yellow
 
-.slider__next
-  margin-left: 22px
-  .icon
-    transform: scale(-1,-1)
+  .slider__next,.slick-next
+    margin-left: 22px
+    .icon
+      transform: scale(-1,-1)
 
 .feedback
   color: #333
@@ -409,6 +410,7 @@
 
 .feedback__text
   margin-left: 165px
+  padding-right: 10px 
   +r(600)
     margin-left: 0 
 
@@ -477,13 +479,27 @@
   margin: 20px 30px
   img
     display: block
+    
+@keyframes shake
+  0%, 100% 
+    transform: translate3d(0, 0, 0)
+  10%, 30%, 50%, 70%, 90%
+    transform: translate3d(-10px, 0, 0)
+  20%, 40%, 60%, 80%
+    transform: translate3d(10px, 0, 0)
 
+.shake
+  animation-name: shake
+  animation-duration: 1s
+  animation-timing-function: linear
+  animation-iteration-count: 1
+  
 .form
   margin: 55px -10px 0
   font-size: 0
+  position: relative
   +r(600)
     margin-top: 24px 
-
 .form__field
   padding: 0 10px
   margin-bottom: 20px
@@ -509,7 +525,28 @@
   +placeholder
     color: #333
     line-height: normal
-
+.form__success
+  font-size: 30px 
+  +pol
+  text-align: center
+  transform: translate3d(100%, 0, 0)
+  position: absolute
+  left: 0
+  top: 0
+  right: 0 
+  padding: 15px 
+  transition: all .3s ease-in-out
+  padding: 10px 
+  strong
+    font-weight: normal
+    display: block
+    font-size: 40px 
+  .is-success &
+    transform: translate3d(0, 0, 0)
+.form__form
+  transition: all .3s ease-in-out
+  .is-success &
+    transform: translate3d(-100%, 0, 0)
 .btn
   display: block
   margin: 40px auto 0

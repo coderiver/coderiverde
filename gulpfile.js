@@ -130,6 +130,8 @@ gulp.task('svgsprite', function() {
 gulp.task('copyjs', function() {
    gulp.src('src/js/*.js')
    .pipe(gulp.dest('site/js/'));
+   gulp.src('src/img/*.jpg')
+   .pipe(gulp.dest('site/img/')); 
 });
 
 gulp.task('svgo', function() {
@@ -181,6 +183,7 @@ gulp.task('assets', function () {
 gulp.task('watch', function() {
     gulp.watch(src.sass + '/**/*', ['sass']);
     gulp.watch(src.js + '/*', ['copyjs']);
+    gulp.watch(src.img + '/*', ['copyjs']);
     gulp.watch(src.jade + '/**/*.jade', ['jade']);
     gulp.watch([src.jade + '/_*.jade', src.jade + '/includes/*.jade'], ['jade-all']);
     gulp.watch(src.svg + '/icons/*.svg', ['svgsprite']);

@@ -113,7 +113,7 @@ block content
         .slide
           .feedback
             .feedback__ava
-              img(src="http://placehold.it/200x200", alt="")
+              img(src="img/akella.jpg", alt="",width="200")
             blockquote.feedback__text
               p.
                 Sed elementum fringilla odio, ac semper justo hendrerit auctor. 
@@ -128,6 +128,25 @@ block content
               cite.feedback__person
                 strong.feedback__name David Bradson
                 span Serveral Devision
+        .slide
+          .feedback
+            .feedback__ava
+              img(src="img/akella.jpg", alt="",width="200")
+            blockquote.feedback__text
+              p.
+                Sed elementum fringilla odio, ac semper justo hendrerit auctor. 
+                In ac sapien fringilla, rhoncus est eget, pretium risus. 
+                Donec vitae turpis turpis. per est at nisl placerat dignissim. 
+                Tristique eget sem. Aliquam volutpat tristique placerat. 
+                Proin efficitur fringilla dictum. Vivamus tristique tempor tincidunt. 
+                Nunc semper est at nisl placerat dignissim. Tristique eget sem. 
+                Aliquam volutpat tristique placerat. Proin efficitur fringilla dictum. 
+                Cras consequat vestibulum sodales.
+
+              cite.feedback__person
+                strong.feedback__name David Bradson
+                span Serveral Devision
+
         .slider__nav
           button.slider__prev(type="button")
             +icon("arrow")
@@ -149,46 +168,74 @@ block content
         .people__all
           .superman
               .superman__pic
-                img(src="http://placesheen.com/200/200", alt="")
+                img(src="img/akella.jpg", alt="",width="200")
               .superman__name
                 | Yuriy Artiukh
               .superman__position
-                | ninja
+                | CEO, Frontend Developer
           .superman
               .superman__pic
-                img(src="http://placesheen.com/200/200", alt="")
+                img(src="img/akella.jpg", alt="",width="200")
               .superman__name
-                | Yuriy Artiukh
-              .superman__position
-                | Account manager
-          .superman
-              .superman__pic
-                img(src="http://placesheen.com/200/200", alt="")
-              .superman__name
-                | Yuriy Artiukh
+                | Artur Moroz
               .superman__position
                 | Lead Frontend Developer
           .superman
               .superman__pic
-                img(src="http://placesheen.com/200/200", alt="")
+                img(src="img/akella.jpg", alt="",width="200")
               .superman__name
-                | Yuriy Artiukh
+                | Yulia Protsevskaya
               .superman__position
-                | ninja
+                | Account Manager
           .superman
               .superman__pic
-                img(src="http://placesheen.com/200/200", alt="")
+                img(src="img/akella.jpg", alt="",width="200")
               .superman__name
-                | Yuriy Artiukh
-              .superman__position
-                | Account manager
-          .superman
-              .superman__pic
-                img(src="http://placesheen.com/200/200", alt="")
-              .superman__name
-                | Yuriy Artiukh
+                | Eugene Godun
               .superman__position
                 | Lead Frontend Developer
+          .superman
+              .superman__pic
+                img(src="img/akella.jpg", alt="",width="200")
+              .superman__name
+                | Valera derevshikov
+              .superman__position
+                | Frontend developer
+          .superman
+              .superman__pic
+                img(src="img/akella.jpg", alt="",width="200")
+              .superman__name
+                | Vadim
+              .superman__position
+                | Frontend Developer
+          .superman
+              .superman__pic
+                img(src="img/akella.jpg", alt="",width="200")
+              .superman__name
+                | Sergey Snyozik
+              .superman__position
+                | Lead Frontend developer
+          .superman
+              .superman__pic
+                img(src="img/akella.jpg", alt="",width="200")
+              .superman__name
+                | Valentin Dorosh
+              .superman__position
+                | Frontend Developer
+          .superman
+              .superman__pic
+                img(src="img/akella.jpg", alt="",width="200")
+              .superman__name
+                | Marina Kozelchuk
+              .superman__position
+                | Frontend Developer
+          .superman
+              .superman__pic
+                img(src="img/akella.jpg", alt="",width="200")
+              .superman__name
+                | Andrey Gnilickiy
+              .superman__position
+                | Frontend Developer
   //END team
   //BEGIN tech
   section.section.tech
@@ -203,13 +250,13 @@ block content
         li.logotypes__item
           img(src="img/logotypes/sass.png", alt="sass logotype")
         li.logotypes__item
-          img(src="img/logotypes/wordpress.png", alt="wordpress logotype")
-        li.logotypes__item
-          img(src="img/logotypes/bootstrap.png", alt="bootstrap logotype")
-        li.logotypes__item
           img(src="img/logotypes/git.png", alt="git logotype")
         li.logotypes__item
           img(src="img/logotypes/js.png", alt="js logotype")
+        li.logotypes__item
+          img(src="img/logotypes/wordpress.png", alt="wordpress logotype")
+        li.logotypes__item
+          img(src="img/logotypes/bootstrap.png", alt="bootstrap logotype")
         li.logotypes__item
           img(src="img/logotypes/html5.png", alt="html5 logotype")
         li.logotypes__item
@@ -226,13 +273,18 @@ block content
         +icon("fish")
 
       form.form
-        .form__field.form__field_half
-          input.input(type="text", name="NAME", placeholder="Name")
-        .form__field.form__field_half
-          input.input(type="email", name="EMAIL", placeholder="Your e-mail")
-        .form__field
-          input.input(type="text", name="PHONE", placeholder="Your skype or phone, or just say hello")
-        button.btn(type="submit") Send
+        .form__form
+          .form__field.form__field_half
+            input#name.input(type="text", name="NAME", placeholder="Name")
+          .form__field.form__field_half
+            input#email.input(type="email", name="EMAIL", placeholder="Your e-mail")
+          .form__field
+            input#contact.input(type="text", name="PHONE", placeholder="Your skype or phone, or just say hello")
+          button.btn(type="submit") Send
+        .form__success
+            strong
+              | Thank you! 
+            | We will get in touch with you as soon as possible!
   //END order
 
   //BEGIN contacts

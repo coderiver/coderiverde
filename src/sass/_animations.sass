@@ -2,19 +2,19 @@
 	@for $i from 1 through 140
 		.p#{$i}
 			@if length($obj) >= $i
-				-webkit-clip-path: nth($obj,$i) 
+				clip-path: nth($obj,$i) 
 			@else
-				-webkit-clip-path: $center
+				clip-path: $center
 			@if $setcolors
 				background: nth($colors,random(9))  
 				// background: #000 
 			@if $setdelays
 				&:before 
-					-webkit-animation-delay: random(3000) + ms
+					animation-delay: random(3000) + ms
 			@if $delays
 				transition-delay: random(500) + ms !important
 // Normally mainpage styles
-@-webkit-keyframes pulsate
+@keyframes pulsate
 	0%
 		opacity: 0
 	35%
@@ -25,7 +25,30 @@
 		opacity: 0 
 	100%
 		opacity: 0
+@keyframes move
+	0%
+		top: 0
+		left: 0  
+		
+	35%
+		top: 10px
+		left: 10px  
+	50%
+		top: 0
+		left: 20px  
+	65%
+		top: -10px 
+		left: 0 
+	100%
+		top: 0
+		left: 0  
 .canvas
+	position: relative
+	// animation-name: move
+	// animation-duration: 10s
+	// animation-timing-function: ease-in-out
+	// animation-timing-function: linear
+	// animation-iteration-count: infinite
 	.p
 		position: absolute
 		top: 0
