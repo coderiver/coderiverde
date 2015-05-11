@@ -71,10 +71,21 @@ head.ready(function() {
 		contactVal = $('#contact').val();
 
 		if(nameVal!='' && isEmail(emailVal) && contactVal!=''){
-			setTimeout(function(){
-				// here goes ajax call
-				$('.form').addClass('is-success');
-			}, 1000);
+			// dummy
+			// setTimeout(function(){
+			// 	$('.form').addClass('is-success');
+			// }, 1000);
+
+			$.ajax({
+				type: "POST",
+				url: "/send.php",
+				data: $(".form").serialize(), // serializes the form's elements.
+				success: function(data) {
+					$('form').addClass('is-success');
+					console.log(data);
+					setTimeout(function(){$('.form').removeClass("is-success");}, 2000);
+				}
+			});
 		}
 		else{
 			$('.form').addClass('shake');
@@ -85,6 +96,4 @@ head.ready(function() {
 		}
 	});
 					
-
-	//@todo ajax send form
 });
