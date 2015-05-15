@@ -1,5 +1,7 @@
 $c: #FFF000;
+$c: #fff;
 $k: 5%;
+$k: 0.1;
 $colors: #8373d6, #ed8468, #7ffd38,#db8c8c,#04641d,#84a4f1,#20a14e,#ac142b,#f784fe,#6471ef,#71ba4e,#b8e4ae;
 $colors: 
 $c, 
@@ -14,6 +16,19 @@ darken($c,7*$k),
 darken($c,8*$k),
 darken($c,9*$k),
 darken($c,10*$k);
+$colors: 
+$c, 
+rgba($c,$k),
+rgba($c,2*$k),
+rgba($c,3*$k),
+rgba($c,3*$k),
+rgba($c,4*$k),
+rgba($c,5*$k),
+rgba($c,6*$k),
+rgba($c,7*$k),
+rgba($c,8*$k),
+rgba($c,9*$k),
+rgba($c,10*$k);
 $center: polygon(50% 50%, 50% 50%, 50% 50%);
 
 

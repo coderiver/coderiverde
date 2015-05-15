@@ -10,6 +10,10 @@ block content
   
   //BEGIN header
   header.header
+    .header__bg
+      video(autoplay="autoplay",data-goto="order",loop="loop", muted="muted")
+        source(src="img/video.mp4",type="video/mp4")
+
     .header__row
       .header__right
         button.js-scroll.say-hello(type="button",data-goto="order")
